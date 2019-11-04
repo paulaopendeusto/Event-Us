@@ -1,0 +1,12 @@
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class" con definicion enhanced
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class" con definicion enhanced
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+04-11-19_15:26:31 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=239 ms, enhance=164 ms, total=403 ms. Compruebe el LOG para los detalles
+04-11-19_15:38:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class" con definicion enhanced
+04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class" con definicion enhanced
+04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=228 ms, enhance=159 ms, total=387 ms. Compruebe el LOG para los detalles
