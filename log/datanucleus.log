@@ -10,3 +10,962 @@
 04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class" con definicion enhanced
 04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
 04-11-19_15:38:07 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=228 ms, enhance=159 ms, total=387 ms. Compruebe el LOG para los detalles
+04-11-19_17:09:39 (es.deusto.spq.es.deusto.spq.App.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+04-11-19_17:36:58 (es.deusto.spq.es.deusto.spq.App.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+19-11-19_12:09:00 (es.deusto.spq.es.deusto.spq.App.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+19-11-19_12:27:29 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19-11-19_12:27:30 (main) ERROR [DataNucleus.Enhancer] - Error thrown enhancing with ASMClassEnhancer
+java.lang.IllegalArgumentException: Class versions V1_5 or less must use F_NEW frames.
+	at org.datanucleus.enhancer.asm.MethodWriter.visitFrame(MethodWriter.java:779)
+	at org.datanucleus.enhancer.methods.GetObjectId.execute(GetObjectId.java:90)
+	at org.datanucleus.enhancer.EnhancerClassAdapter.visitEnd(EnhancerClassAdapter.java:340)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:692)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:400)
+	at org.datanucleus.enhancer.ClassEnhancerImpl.enhance(ClassEnhancerImpl.java:696)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhanceClass(DataNucleusEnhancer.java:937)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:528)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:27:30 (main) INFO  [DataNucleus.Enhancer] - ERROR (Persistable) : data.Event
+19-11-19_12:27:30 (main) ERROR [DataNucleus.Enhancer] - Error thrown enhancing with ASMClassEnhancer
+java.lang.IllegalArgumentException: Class versions V1_5 or less must use F_NEW frames.
+	at org.datanucleus.enhancer.asm.MethodWriter.visitFrame(MethodWriter.java:779)
+	at org.datanucleus.enhancer.methods.CopyKeyFieldsFromObjectId.execute(CopyKeyFieldsFromObjectId.java:163)
+	at org.datanucleus.enhancer.EnhancerClassAdapter.visitEnd(EnhancerClassAdapter.java:340)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:692)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:400)
+	at org.datanucleus.enhancer.ClassEnhancerImpl.enhance(ClassEnhancerImpl.java:696)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhanceClass(DataNucleusEnhancer.java:937)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:528)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:27:30 (main) INFO  [DataNucleus.Enhancer] - ERROR (Persistable) : data.Spaces
+19-11-19_12:27:30 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con un error. Por favor lee el LOG para los detalles. Habia errores con algunas de las clases
+Failure during enhancement of classes - see the log for details
+org.datanucleus.exceptions.NucleusException: Failure during enhancement of classes - see the log for details
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:539)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:53:18 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19-11-19_12:53:18 (main) ERROR [DataNucleus.Enhancer] - Error thrown enhancing with ASMClassEnhancer
+java.lang.IllegalArgumentException: Class versions V1_5 or less must use F_NEW frames.
+	at org.datanucleus.enhancer.asm.MethodWriter.visitFrame(MethodWriter.java:779)
+	at org.datanucleus.enhancer.methods.GetObjectId.execute(GetObjectId.java:90)
+	at org.datanucleus.enhancer.EnhancerClassAdapter.visitEnd(EnhancerClassAdapter.java:340)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:692)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:400)
+	at org.datanucleus.enhancer.ClassEnhancerImpl.enhance(ClassEnhancerImpl.java:696)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhanceClass(DataNucleusEnhancer.java:937)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:528)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:53:18 (main) INFO  [DataNucleus.Enhancer] - ERROR (Persistable) : data.Event
+19-11-19_12:53:18 (main) ERROR [DataNucleus.Enhancer] - Error thrown enhancing with ASMClassEnhancer
+java.lang.IllegalArgumentException: Class versions V1_5 or less must use F_NEW frames.
+	at org.datanucleus.enhancer.asm.MethodWriter.visitFrame(MethodWriter.java:779)
+	at org.datanucleus.enhancer.methods.CopyKeyFieldsFromObjectId.execute(CopyKeyFieldsFromObjectId.java:163)
+	at org.datanucleus.enhancer.EnhancerClassAdapter.visitEnd(EnhancerClassAdapter.java:340)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:692)
+	at org.datanucleus.enhancer.asm.ClassReader.accept(ClassReader.java:400)
+	at org.datanucleus.enhancer.ClassEnhancerImpl.enhance(ClassEnhancerImpl.java:696)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhanceClass(DataNucleusEnhancer.java:937)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:528)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:53:18 (main) INFO  [DataNucleus.Enhancer] - ERROR (Persistable) : data.Spaces
+19-11-19_12:53:18 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con un error. Por favor lee el LOG para los detalles. Habia errores con algunas de las clases
+Failure during enhancement of classes - see the log for details
+org.datanucleus.exceptions.NucleusException: Failure during enhancement of classes - see the log for details
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:539)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+19-11-19_12:56:18 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19-11-19_12:56:19 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class" con definicion enhanced
+19-11-19_12:56:19 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+19-11-19_12:56:19 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class" con definicion enhanced
+19-11-19_12:56:19 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+19-11-19_12:56:19 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=297 ms, enhance=188 ms, total=485 ms. Compruebe el LOG para los detalles
+19-11-19_12:57:05 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19-11-19_12:57:06 (main) INFO  [DataNucleus.Enhancer] - La clase "data.Event" esta enhanced.
+19-11-19_12:57:06 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+19-11-19_12:57:06 (main) INFO  [DataNucleus.Enhancer] - La clase "data.Spaces" esta enhanced.
+19-11-19_12:57:06 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+19-11-19_12:57:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=273 ms, enhance=60 ms, total=333 ms. Compruebe el LOG para los detalles
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_12:58:40 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_12:58:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/eventus?verifyServerCertificate=false&useSSL=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=root
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_E.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_S.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\es\deusto\spq\App.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEspacios.class
+19-11-19_12:58:42 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEventos.class
+19-11-19_12:58:43 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:01:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:01:34 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/eventus?verifyServerCertificate=false&useSSL=true
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=root
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_E.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_S.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\es\deusto\spq\App.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEspacios.class
+19-11-19_13:01:35 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEventos.class
+19-11-19_13:01:35 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con DROP TABLE `SPACES` CASCADE : Cannot delete or update a parent row: a foreign key constraint fails
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+
+19-11-19_13:01:35 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la borracion de algunas class(es) : Cannot delete or update a parent row: a foreign key constraint fails
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+
+19-11-19_13:01:35 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: Una excepcion estaba tirada durante la borracion de algunas class(es) : Cannot delete or update a parent row: a foreign key constraint fails
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+
+Una excepcion estaba tirada durante la borracion de algunas class(es) : Cannot delete or update a parent row: a foreign key constraint fails
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+
+org.datanucleus.exceptions.NucleusUserException: Una excepcion estaba tirada durante la borracion de algunas class(es) : Cannot delete or update a parent row: a foreign key constraint fails
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:228)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	... 4 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.AbstractTable.drop(AbstractTable.java:536)
+	at org.datanucleus.store.rdbms.DeleteTablesSchemaTransaction.run(DeleteTablesSchemaTransaction.java:218)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4246)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:02:37 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:02:37 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'eventus'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'eventus'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+19-11-19_13:02:37 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'eventus'
+19-11-19_13:02:37 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'eventus'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'eventus'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:03:02 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:03:03 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'eventus'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'eventus'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+19-11-19_13:03:03 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'eventus'
+19-11-19_13:03:03 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'eventus'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'eventus'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eventus'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:04:31 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/eventus?verifyServerCertificate=false&useSSL=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=root
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_E.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_S.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\es\deusto\spq\App.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEspacios.class
+19-11-19_13:04:32 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEventos.class
+19-11-19_13:04:33 (main) WARN  [DataNucleus.Datastore] - SQL Warning : Name 'EVENT_PK' ignored for PRIMARY key.
+19-11-19_13:04:33 (main) WARN  [DataNucleus.Datastore] - SQL Warning : Name 'SPACES_PK' ignored for PRIMARY key.
+19-11-19_13:04:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:04:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:04:59 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/eventus?verifyServerCertificate=false&useSSL=true
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=root
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_E.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_S.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\es\deusto\spq\App.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEspacios.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEventos.class
+19-11-19_13:05:00 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-core\5.2.2\datanucleus-core-5.2.2.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.2.2\datanucleus-api-jdo-5.2.2.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\datanucleus-rdbms\5.2.1\datanucleus-rdbms-5.2.1.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m12\javax.jdo-3.2.0-m12.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+19-11-19_13:05:17 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/eventus?verifyServerCertificate=false&useSSL=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=root
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_E.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\dao\DB_DAO_S.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\es\deusto\spq\App.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEspacios.class
+19-11-19_13:05:19 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\WORKSPACE\Event-Us-project\target\classes\gestor\gestorEventos.class
+19-11-19_13:05:19 (main) WARN  [DataNucleus.Datastore] - SQL Warning : Name 'EVENT_PK' ignored for PRIMARY key.
+19-11-19_13:05:19 (main) WARN  [DataNucleus.Datastore] - SQL Warning : Name 'SPACES_PK' ignored for PRIMARY key.
+19-11-19_13:05:20 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19-11-19_13:11:51 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19-11-19_13:11:52 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Event.class" con definicion enhanced
+19-11-19_13:11:52 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+19-11-19_13:11:52 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\WORKSPACE\Event-Us-project\target\classes\data\Spaces.class" con definicion enhanced
+19-11-19_13:11:52 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+19-11-19_13:11:52 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=234 ms, enhance=156 ms, total=390 ms. Compruebe el LOG para los detalles
+19-11-19_13:12:22 (es.deusto.spq.App.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla

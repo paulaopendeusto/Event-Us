@@ -2,6 +2,7 @@ package data;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.Element;
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -18,9 +19,8 @@ public class Spaces
 	private int capacity;
 	private String resources;
 	
-	
-	@Join
-	@Persistent(defaultFetchGroup = "true")
+	@Persistent(defaultFetchGroup="true")
+	@Element(column="idSpace")
 	private ArrayList<Event> listaEventos;
 	
 	public Spaces(int idSpace, String name, String address, int capacity, String resources)

@@ -13,8 +13,6 @@ public class Event {
 
 	private String Name;
 	private String Tipology;
-	@Join
-	private Spaces Space;
 	private float Price;
 	private String Resources;
 	private Date DateEvent;
@@ -32,10 +30,7 @@ public class Event {
 		this.Minutes = minutes;
 	}
 
-	public void addSpace (Spaces space)
-	{
-		this.Space= space;
-	}
+
 	public String getName() {
 		return Name;
 	}
@@ -50,14 +45,6 @@ public class Event {
 
 	public void setTipology(String tipology) {
 		this.Tipology = tipology;
-	}
-	
-	public Spaces getSpace() {
-		return Space;
-	}
-
-	public void setSpace(Spaces space) {
-		this.Space = space;
 	}
 
 	public int getHour() {

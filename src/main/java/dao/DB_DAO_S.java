@@ -53,8 +53,6 @@ public class DB_DAO_S {
 			System.out.println("Usuario registrado : "+espacio.getName());
 			
 			tx.commit();
-			
-			return true;
 
 		} catch (Exception ex) {
 			System.err.println(" $ Error a la hora de registrar usuario: " + ex.getMessage());
@@ -71,7 +69,10 @@ public class DB_DAO_S {
 				pm.close();
 				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
 			}
+			
 		}
+		
+		return true;
 	}
 
 	public Spaces getS(int idSpace) {

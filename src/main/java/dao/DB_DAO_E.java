@@ -3,13 +3,12 @@ package dao;
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
-import javax.jdo.Query;
+
 import javax.jdo.Transaction;
 
-import javax.jdo.Extent;
+
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+
 
 import data.*;
 
