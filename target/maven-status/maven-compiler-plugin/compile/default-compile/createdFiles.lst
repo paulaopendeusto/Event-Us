@@ -1,7 +1,0 @@
-data\Event.class
-dao\DB_DAO_S.class
-gestor\gestorEventos.class
-es\deusto\spq\App.class
-gestor\gestorEspacios.class
-data\Spaces.class
-dao\DB_DAO_E.class

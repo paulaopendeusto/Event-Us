@@ -72,7 +72,10 @@ public class Spaces
 		this.resources = resources;
 	}
 	
-	
+	public void addEvento(Event e)
+	{
+		this.listaEventos.add(e);
+	}
 	
 		
 }
