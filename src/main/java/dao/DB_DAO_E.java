@@ -3,12 +3,12 @@ package dao;
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
-
+import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 
 import java.util.ArrayList;
-
+import java.util.List;
 
 import data.*;
 
@@ -72,6 +72,41 @@ public class DB_DAO_E{
 		}
 	}
 
-	
+	public Event getE(int idEvent) {
+		// TODO Auto-generated method stub
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		String nombre;
+
+		Event evento = null;
+
+		try {
+		//System.out.println("   * Buscando usuario con email: " + email);
+		tx.begin();
+		Query query = pm.newQuery(Event.class);
+		@SuppressWarnings("unchecked")
+		List<Event> eventos = (List<Event>) query.execute();
+		for (Event u  : eventos) {
+		if (u.getIdEvent() == (idEvent)) {
+
+		evento = new Event(idEvent, u.getName(),u.getTipology(),u.getPrice(),u.getResources(), u.getDateEvent(), u.getHour(), u.getMinutes());
+
+		}
+
+		}
+		tx.commit();
+		} catch (Exception ex) {
+		System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		} finally {
+		if (tx != null && tx.isActive()) {
+		tx.rollback();
+		}
+
+
+		pm.close();
+		}
+
+		return evento;
+		}
 
 }
