@@ -1,8 +1,9 @@
 package gestor;
 
-import data.Event;
+import java.util.List;
+
 import dao.DB_DAO_S;
-import data.*;
+import data.Spaces;
 
 public class gestorEspacios 
 {
@@ -14,12 +15,17 @@ public class gestorEspacios
 		DB_DAO_S.getInstance().registrarS(objEspacio);
 		
 	}
-	
+	public List<Spaces> listaEspacios() 
+	{
+		return null;
+		// sacar mediante DB_DAO_S lista de todos los espacios ==> metodo en dao todavia no esta
+		
+		
+	}
 	public void eliminarEspacio(int idEspacio)
 	{
 		
 		//eliminar espacio
 	}
-	
 	
 }

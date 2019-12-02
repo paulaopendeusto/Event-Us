@@ -2,8 +2,6 @@ package gui;
 
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
-import data.Event;
-import gestor.gestorEspacios;
 import gestor.gestorEventos;
 import java.util.List;
 import javax.swing.JTextField;
@@ -13,15 +11,17 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import data.Event;
+import gestor.gestorEspacios;
 
-public class CreateEventFrame {
+public class ShowEventFrame {
 	public JFrame frame;
 	private JTextField textField;
 	private gestorEspacios  espacio;
 	private gestorEventos evento;
 
 
-	public CreateEventFrame(gestorEspacios espacoio,gestorEventos evento ) {
+	public ShowEventFrame(gestorEspacios espacoio,gestorEventos evento ) {
 		this.evento= evento;
 		initialize();
 	}
