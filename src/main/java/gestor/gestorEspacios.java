@@ -15,4 +15,11 @@ public class gestorEspacios
 		
 	}
 	
+	public void eliminarEspacio(int idEspacio)
+	{
+		
+		//eliminar espacio
+	}
+	
+	
 }
