@@ -11,17 +11,14 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import data.Event;
-import gestor.gestorEspacios;
 
 public class ShowEventFrame {
 	public JFrame frame;
 	private JTextField textField;
-	private gestorEspacios  espacio;
 	private gestorEventos evento;
 
 
-	public ShowEventFrame(gestorEspacios espacoio,gestorEventos evento ) {
+	public ShowEventFrame(gestorEventos evento ) {
 		this.evento= evento;
 		initialize();
 	}
@@ -71,6 +68,13 @@ public class ShowEventFrame {
 		
 		
 		frame.getContentPane().add(btnEliminar);
+	}
+
+	public void setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		
+		setVisible(true);
+		
 	}
 
 }
