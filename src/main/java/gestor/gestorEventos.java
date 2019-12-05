@@ -3,6 +3,7 @@ package gestor;
 import java.util.List;
 
 import dao.DB_DAO_E;
+import dao.DB_DAO_S;
 import data.Event;
 
 public class gestorEventos 
@@ -18,10 +19,13 @@ public class gestorEventos
 		
 	}
 	
-	public void eliminarEvento(int idEvent)
-	{
+	public void eliminarEvento(int idEvento)
+	{	
+		//eliminar espacio
+		System.out.println("Eliminar evento");
 		
-		//eliminar evento
+		
+		DB_DAO_E.getInstance().eliminarE(idEvento);
 	}
 	
 	public List<Event> listaEventos() 

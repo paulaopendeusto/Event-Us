@@ -24,15 +24,9 @@ public class App
 		Spaces objEspacio2 = new Spaces(2,"bbklive","bilbao",100000,"");
 		Spaces objEspacio3 = new Spaces(3,"bbklive","bilbao",100000,"");
 		
-		
-		
-		
-	
 //		String pattern = "MM-dd-yyyy";
 //		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 //		Date date = simpleDateFormat.parse("12-01-2018");
-//		
-//	
 //		
 //		gestorEventos objGestorE = new gestorEventos();
 //		

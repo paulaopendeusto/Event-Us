@@ -40,7 +40,7 @@ public class DB_DAO_S {
 	public boolean registrarS(Spaces espacio){	
 						
 		try {
-			System.out.println("- Registrando usuario");			
+			System.out.println("- Registrando espacio");			
 			pm = pmf.getPersistenceManager();
 			tx = pm.currentTransaction();		
 			
@@ -50,12 +50,12 @@ public class DB_DAO_S {
 		
 			pm.makePersistent(espacio);
 								
-			System.out.println("Usuario registrado : "+espacio.getName());
+			System.out.println("Espacio registrado : "+espacio.getName());
 			
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.err.println(" $ Error a la hora de registrar usuario: " + ex.getMessage());
+			System.err.println(" $ Error a la hora de registrar espacio: " + ex.getMessage());
 			ex.printStackTrace();
 			
 			return false;
@@ -123,16 +123,14 @@ public class DB_DAO_S {
 			tx.begin();
 			
 			
-			System.out.println("idEspacio"+idEspacio);	
 			Spaces sp = pm.getObjectById(Spaces.class , idEspacio);
-			System.out.println("name: "+sp.getName());
 			pm.deletePersistent(sp);
-			System.out.println("Eliminado!!");
+			System.out.println("Espacio eliminado!!");
 			
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.err.println(" $ Error a la hora de registrar usuario: " + ex.getMessage());
+			System.err.println(" $ Error a la hora de registrar espacio: " + ex.getMessage());
 			ex.printStackTrace();
 			
 			return false;
