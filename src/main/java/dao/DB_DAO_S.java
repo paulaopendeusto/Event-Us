@@ -112,5 +112,45 @@ public class DB_DAO_S {
 		
 		return espacio;
 	}
+	
+	public boolean eliminarS(int idEspacio){	
+		
+		try {
+					
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();		
+			
+			tx.begin();
+			
+			
+			System.out.println("idEspacio"+idEspacio);	
+			Spaces sp = pm.getObjectById(Spaces.class , idEspacio);
+			System.out.println("name: "+sp.getName());
+			pm.deletePersistent(sp);
+			System.out.println("Eliminado!!");
+			
+			tx.commit();
+
+		} catch (Exception ex) {
+			System.err.println(" $ Error a la hora de registrar usuario: " + ex.getMessage());
+			ex.printStackTrace();
+			
+			return false;
+			
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
+			}
+			
+		}
+		
+		return true;
+	}
+
 
 }

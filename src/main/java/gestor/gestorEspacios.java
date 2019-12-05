@@ -22,10 +22,14 @@ public class gestorEspacios
 		
 		
 	}
+	
 	public void eliminarEspacio(int idEspacio)
-	{
-		
+	{	
 		//eliminar espacio
+		System.out.println("Eliminar espacio");
+		
+		
+		DB_DAO_S.getInstance().eliminarS(idEspacio);
 	}
 	
 }
