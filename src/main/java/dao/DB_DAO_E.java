@@ -144,6 +144,42 @@ public class DB_DAO_E{
 		
 		return true;
 	}
+	
+	public boolean modificarE(int idEvento){	
+		
+		try {
+					
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();		
+			
+			tx.begin();
+			
+			
+			// modificar evento
+			System.out.println("Evento modificado!!");
+			
+			tx.commit();
+
+		} catch (Exception ex) {
+			System.err.println(" $ Error a la hora de modificar evento: " + ex.getMessage());
+			ex.printStackTrace();
+			
+			return false;
+			
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
+			}
+			
+		}
+		
+		return true;
+	}
 
 
 }

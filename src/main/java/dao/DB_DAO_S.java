@@ -150,5 +150,41 @@ public class DB_DAO_S {
 		return true;
 	}
 
+	public boolean modificarS(int idEspacio){	
+		
+		try {
+					
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();		
+			
+			tx.begin();
+			
+			
+			// modificar espacio
+			System.out.println("Espacio modificado!!");
+			
+			tx.commit();
+
+		} catch (Exception ex) {
+			System.err.println(" $ Error a la hora de modificar espacio: " + ex.getMessage());
+			ex.printStackTrace();
+			
+			return false;
+			
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
+			}
+			
+		}
+		
+		return true;
+	}
+
 
 }
