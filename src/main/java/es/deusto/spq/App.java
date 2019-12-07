@@ -20,9 +20,9 @@ public class App
 
     	gestorEspacios objGestor = new gestorEspacios();
 		
-		Spaces objEspacio = new Spaces(1,"bbklive","bilbao",100000,"");
-		Spaces objEspacio2 = new Spaces(2,"bbklive","bilbao",100000,"");
-		Spaces objEspacio3 = new Spaces(3,"bbklive","bilbao",100000,"");
+		Spaces objEspacio = new Spaces(2,"bbklive","bilbao",100000,"");
+		Spaces objEspacio2 = new Spaces(4,"bbklive","bilbao",100000,"");
+		Spaces objEspacio3 = new Spaces(5,"bbklive","bilbao",100000,"");
 		
 //		String pattern = "MM-dd-yyyy";
 //		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
@@ -39,7 +39,7 @@ public class App
 		objGestor.crearEspacio(objEspacio2);
 		objGestor.crearEspacio(objEspacio3);
 //		objGestorE.crearEvento(evento);
-		objGestor.eliminarEspacio(2);
+//		objGestor.eliminarEspacio(2);
 		
     }
 }

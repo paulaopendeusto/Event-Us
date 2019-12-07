@@ -57,3 +57,22 @@
 05-12-19_18:51:46 (main) WARN  [DataNucleus.Datastore] - SQL Warning : Name 'SPACES_PK' ignored for PRIMARY key.
 05-12-19_18:51:46 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
 05-12-19_18:52:09 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_10:10:33 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+07-12-19_10:10:34 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Event.class" con definicion enhanced
+07-12-19_10:10:34 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+07-12-19_10:10:34 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Spaces.class" con definicion enhanced
+07-12-19_10:10:34 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+07-12-19_10:10:34 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=250 ms, enhance=157 ms, total=407 ms. Compruebe el LOG para los detalles
+07-12-19_10:13:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_10:17:42 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+07-12-19_10:17:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Event.class" con definicion enhanced
+07-12-19_10:17:43 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+07-12-19_10:17:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Spaces.class" con definicion enhanced
+07-12-19_10:17:43 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+07-12-19_10:17:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=238 ms, enhance=141 ms, total=379 ms. Compruebe el LOG para los detalles
+07-12-19_10:23:50 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Event.class" con definicion enhanced
+07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Event
+07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Spaces.class" con definicion enhanced
+07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
+07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=249 ms, enhance=152 ms, total=401 ms. Compruebe el LOG para los detalles
