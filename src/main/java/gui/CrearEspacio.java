@@ -41,6 +41,7 @@ public class CrearEspacio {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setVisible(true);
 		frame.setBounds(100, 100, 600, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -106,7 +107,7 @@ public class CrearEspacio {
 		txtTextfieldresources.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\albae\\Git Projects\\Event-Us\\src\\main\\java\\espacio.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\PC\\eclipse-workspace\\Event-Us\\src\\main\\java\\espacio.jpg"));
 		lblNewLabel.setBounds(0, 0, 584, 411);
 		frame.getContentPane().add(lblNewLabel);
 	}

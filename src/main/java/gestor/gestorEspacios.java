@@ -33,11 +33,17 @@ public class gestorEspacios
 	public List<Spaces> listaEspacios()
 	{
 		List<Spaces> espacios = DB_DAO_S.getInstance().getEspacios();
-		
 	
 		System.out.println("lsitado espacios");
 		 
 		return espacios;
+	}
+	
+	public Spaces devolverEspacio(int idEspacio)
+	{
+		Spaces espacio = DB_DAO_S.getInstance().getS(idEspacio);
+		
+		return espacio;	
 		
 	}
 	

@@ -76,3 +76,35 @@
 07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\eclipse-workspace\Event-Us\target\classes\data\Spaces.class" con definicion enhanced
 07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : data.Spaces
 07-12-19_10:23:51 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=249 ms, enhance=152 ms, total=401 ms. Compruebe el LOG para los detalles
+07-12-19_11:31:38 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:31:40 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:32:22 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:32:24 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:32:58 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:33:00 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:48:27 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:48:29 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:50:00 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:50:02 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:53:01 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:53:02 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_11:53:36 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_11:53:38 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:16:07 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:16:09 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:18:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:18:14 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:20:10 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:20:11 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:20:20 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:20:22 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:27:05 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:27:06 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:38:43 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:38:45 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:47:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:47:41 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:48:52 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:48:54 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+07-12-19_12:55:53 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+07-12-19_12:55:55 (main) WARN  [DataNucleus.Query] - Query for candidates of data.Spaces and subclasses resulted in no possible candidates : La clase "data.Spaces" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData

@@ -90,6 +90,8 @@ public class DB_DAO_S {
 			Query query = pm.newQuery(Spaces.class);
 			@SuppressWarnings("unchecked")
 			List<Spaces> espacios = (List<Spaces>) query.execute();
+			
+		
 			for (Spaces u  : espacios) {
 				if (u.getIdSpace() == (idSpace)) {
 				
@@ -127,7 +129,7 @@ public class DB_DAO_S {
 			Query query = pm.newQuery(Spaces.class);
 			@SuppressWarnings("unchecked")
 			List<Spaces> espacios = (List<Spaces>) query.execute();
-
+			
 			espaciosLista = new ArrayList<Spaces>(espacios); 
 			tx.commit();
 		} catch (Exception ex) {

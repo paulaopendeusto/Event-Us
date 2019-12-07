@@ -50,6 +50,7 @@ public class CrearEvento {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setVisible(true);
 		frame.setBounds(100, 100, 600, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);

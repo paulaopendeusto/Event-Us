@@ -5,16 +5,25 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.ListModel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
+
+import data.Event;
+import gestor.gestorEventos;
+
 import javax.swing.JList;
+import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.List;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 
 public class menuEventos extends JFrame {
+	
+	gestorEventos objGestorE=new gestorEventos();
 
 	private JPanel contentPane;
 
@@ -35,6 +44,7 @@ public class menuEventos extends JFrame {
 		lblGestionarEspacios.setBounds(136, 41, 333, 35);
 		contentPane.add(lblGestionarEspacios);
 		
+		
 		JList list = new JList();
 		list.setBounds(46, 104, 484, 191);
 		contentPane.add(list);
@@ -42,6 +52,7 @@ public class menuEventos extends JFrame {
 		JButton btnNewButton = new JButton("Crear Evento");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				CrearEvento windowCrearEvento=new CrearEvento();
 			}
 		});
 		btnNewButton.setBounds(46, 333, 143, 29);

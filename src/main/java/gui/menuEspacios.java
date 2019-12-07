@@ -41,9 +41,12 @@ public class menuEspacios extends JFrame {
 		
 		JButton btnNewButton = new JButton("Crear espacio");
 		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+			public void actionPerformed(ActionEvent e) 
+			{
+				CrearEspacio windowCrearEspacio=new CrearEspacio();
+			
 			}
-		});
+		});	
 		btnNewButton.setBounds(46, 333, 143, 29);
 		contentPane.add(btnNewButton);
 		
