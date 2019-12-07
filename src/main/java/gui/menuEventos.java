@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.ListModel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
@@ -26,6 +27,7 @@ public class menuEventos extends JFrame {
 	gestorEventos objGestorE=new gestorEventos();
 
 	private JPanel contentPane;
+	public JFrame frame;
 
 
 	/**
@@ -48,6 +50,25 @@ public class menuEventos extends JFrame {
 		JList list = new JList();
 		list.setBounds(46, 104, 484, 191);
 		contentPane.add(list);
+		
+//		frame = new JFrame();
+//		frame.setBounds(100, 100, 1000, 400);
+//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		frame.getContentPane().setLayout(null);
+//		
+//		JTextArea textPane = new JTextArea();
+//		textPane.setFont(new Font("Calibri Light", Font.PLAIN, 21));
+//		textPane.setWrapStyleWord(true);
+//		textPane.setBounds(0, 0, 970, 270);
+//		gestorEventos objGestorEventos=new gestorEventos();
+//		List<Event> eventos = objGestorEventos.listaEventos();
+//		
+//		for (Event e : eventos) {
+//	        textPane.append(e.toString() + "\n"); 
+//	    }
+//		
+//		frame.getContentPane().add(textPane);
+		
 		
 		JButton btnNewButton = new JButton("Crear Evento");
 		btnNewButton.addActionListener(new ActionListener() {
