@@ -113,6 +113,36 @@ public class DB_DAO_S {
 		return espacio;
 	}
 	
+	public List<Spaces> getEspacios() {
+		// TODO Auto-generated method stub
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+	
+
+		List<Spaces> espaciosLista = null;
+	
+		try {
+			//System.out.println("   * Buscando usuario con email: " + email);
+			tx.begin();
+			Query query = pm.newQuery(Spaces.class);
+			@SuppressWarnings("unchecked")
+			List<Spaces> espacios = (List<Spaces>) query.execute();
+
+			espaciosLista = new ArrayList<Spaces>(espacios); 
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+
+			pm.close();
+		}
+		
+		return espaciosLista;
+	}
 	public boolean eliminarS(int idEspacio){	
 		
 		try {

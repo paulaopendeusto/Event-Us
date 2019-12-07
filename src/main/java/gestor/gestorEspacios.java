@@ -16,11 +16,7 @@ public class gestorEspacios
 		
 	}
 	
-	public List<Spaces> listaEspacios() 
-	{
-		return null;
-		// sacar mediante DB_DAO_S lista de todos los espacios ==> metodo en dao todavia no esta	
-	}
+	
 	
 	public void eliminarEspacio(int idEspacio)
 	{	
@@ -32,6 +28,17 @@ public class gestorEspacios
 	{
 		System.out.println("Modificar espacio");
 		DB_DAO_S.getInstance().modificarS(idEspacio);
+	}
+	
+	public List<Spaces> listaEspacios()
+	{
+		List<Spaces> espacios = DB_DAO_S.getInstance().getEspacios();
+		
+	
+		System.out.println("lsitado espacios");
+		 
+		return espacios;
+		
 	}
 	
 }
