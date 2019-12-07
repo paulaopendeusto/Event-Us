@@ -12,6 +12,12 @@ import javax.jdo.annotations.PrimaryKey;
 @PersistenceCapable(detachable = "true")
 public class Spaces 
 {
+	@Override
+	public String toString() {
+		return "Spaces [idSpace=" + idSpace + ", name=" + name + ", address=" + address + ", capacity=" + capacity
+				+ ", resources=" + resources + ", listaEventos=" + listaEventos + "]";
+	}
+
 	@PrimaryKey
 	private int idSpace;
 	private String name;
