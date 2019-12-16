@@ -182,7 +182,7 @@ public class DB_DAO_S {
 		return true;
 	}
 
-	public boolean modificarS(int idEspacio){	
+	public boolean modificarS(int idSpace, String name, String address, int capacity, String resources){	
 		
 		try {
 					
@@ -192,7 +192,16 @@ public class DB_DAO_S {
 			tx.begin();
 			
 			
-			// modificar espacio
+			Spaces sp = pm.getObjectById(Spaces.class , idSpace);
+			System.out.println("Espacio: " + sp.getName());
+			
+			sp.setName(name);
+			sp.setAddress(address);
+			sp.setCapacity(capacity);
+			sp.setResources(resources);
+			
+			pm.makePersistent(sp);
+			
 			System.out.println("Espacio modificado!!");
 			
 			tx.commit();

@@ -24,10 +24,10 @@ public class gestorEspacios
 		DB_DAO_S.getInstance().eliminarS(idEspacio);
 	}
 	
-	public void modiciarEspacio(int idEspacio)
+	public void modiciarEspacio(int idSpace, String name, String address, int capacity, String resources)
 	{
 		System.out.println("Modificar espacio");
-		DB_DAO_S.getInstance().modificarS(idEspacio);
+		DB_DAO_S.getInstance().modificarS(idSpace, name, address, capacity, resources);
 	}
 	
 	public List<Spaces> listaEspacios()

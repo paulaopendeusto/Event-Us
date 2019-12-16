@@ -19,11 +19,13 @@ public class App
 {
     public static void main( String[] args ) 
     {
-    	menuPrincipal window=new menuPrincipal();
+    	gestorEspacios objGestor = new gestorEspacios();
+		//objGestor.eliminarEspacio(1);
+
+		menuPrincipal window=new menuPrincipal();
     	window.setVisible(true);
 
-    	gestorEspacios objGestor = new gestorEspacios();
-		
+    	objGestor.modiciarEspacio(5, "nombre", "direccion", 45, "resources");
     	
  //   	Spaces espacio = objGestor.devolverEspacio(2);
     	
@@ -55,7 +57,6 @@ public class App
 //		objGestor.crearEspacio(objEspacio2);
 //		objGestor.crearEspacio(objEspacio3);
 //		objGestorE.crearEvento(evento);
-//		objGestor.eliminarEspacio(2);
-		
+
     }
 }
