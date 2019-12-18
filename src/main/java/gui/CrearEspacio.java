@@ -52,7 +52,7 @@ public class CrearEspacio {
 				
 				if(textFieldName.getText()!=null) 
 				{
-					Spaces objEspacio = new Spaces(2,textFieldName.getText(),txtTextfieldAdress.getText(),Integer.parseInt(spinner.getValue().toString()),txtTextfieldresources.getText());
+					Spaces objEspacio = new Spaces(textFieldName.getText(),txtTextfieldAdress.getText(),Integer.parseInt(spinner.getValue().toString()),txtTextfieldresources.getText());
 					objGestor.crearEspacio(objEspacio);
 
 				}
