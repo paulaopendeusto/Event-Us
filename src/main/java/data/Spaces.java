@@ -82,6 +82,14 @@ public class Spaces
 	{
 		this.listaEventos.add(e);
 	}
+
+	public ArrayList<Event> getListaEventos() {
+		return listaEventos;
+	}
+
+	public void setListaEventos(ArrayList<Event> listaEventos) {
+		this.listaEventos = listaEventos;
+	}
 	
 		
 }
