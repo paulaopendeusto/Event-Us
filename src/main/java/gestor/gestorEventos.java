@@ -31,20 +31,14 @@ public class gestorEventos
 		return objDao.getE(idEvent);
 		
 	}
-//	public List<Event> listaEventos() 
-//	{
-//		DB_DAO_E objDao = new DB_DAO_E();
-//		
-//		objDao.getInstance().
-//		return null;
-//		// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
-//	}
-	
-	public void modiciarEventos(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes)
+	public List<Event> listaEventos() 
 	{
-		System.out.println("Modificar evento");
-		DB_DAO_E.getInstance().modificarE(idEvent, name, tipology, price, resources, date, hour, minutes);
+		DB_DAO_E objDao = new DB_DAO_E();
+		return objDao.getEventos();
+//		objDao.getInstance()
+		// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
 	}
+	
 	
 //	public DefaultListModel<Event> listaEventos() 
 //	{
@@ -76,14 +70,7 @@ public class gestorEventos
 		DB_DAO_E.getInstance().eliminarE(idEvento);
 	}
 	
-	public void modificarEvento(int idEvento)
-	{	
-		System.out.println("Modificar evento");
-		DB_DAO_E.getInstance().modificarE(idEvento);
-	}
-	
-	
-	
+
 	
 	
 }

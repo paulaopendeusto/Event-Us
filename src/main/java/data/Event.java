@@ -33,6 +33,7 @@ public class Event {
 		this.DateEvent = date;
 		this.Hour = hour;
 		this.Minutes = minutes;
+		
 	}
 	
 	public Event(String name, String tipology, float price, String resources, Date date, int hour, int minutes)

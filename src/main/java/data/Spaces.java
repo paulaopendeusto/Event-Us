@@ -38,6 +38,7 @@ public class Spaces
 		this.address=address;
 		this.capacity=capacity;
 		this.resources=resources;
+		this.listaEventos = new ArrayList<Event>();
 	}
 	
 	public Spaces(String name, String address, int capacity, String resources)
