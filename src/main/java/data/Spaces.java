@@ -3,6 +3,7 @@ package data;
 import java.util.ArrayList;
 
 import javax.jdo.annotations.Element;
+import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -19,6 +20,7 @@ public class Spaces
 	}
 
 	@PrimaryKey
+	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
 	private int idSpace;
 	private String name;
 	private String address;
