@@ -70,7 +70,7 @@ public class CrearEvento {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-					Event objevento = new Event(0, textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(),date , Integer.parseInt(textFieldhora.getText(), Integer.parseInt(textFieldminuto.getText())), 0);					
+					Event objevento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(),date , Integer.parseInt(textFieldhora.getText(), Integer.parseInt(textFieldminuto.getText())), 0);					
 					objGestor.crearEvento(objevento);
 
 				}

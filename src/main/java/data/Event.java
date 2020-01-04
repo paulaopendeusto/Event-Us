@@ -32,6 +32,17 @@ public class Event {
 		this.Hour = hour;
 		this.Minutes = minutes;
 	}
+	
+	public Event( String name, String tipology, float price, String resources, Date date, int hour, int minutes)
+	{
+		this.Name = name;
+		this.Tipology = tipology;
+		this.Price = price;
+		this.Resources = resources;
+		this.DateEvent = date;
+		this.Hour = hour;
+		this.Minutes = minutes;
+	}
 
 	public int getIdEvent() {
 		return idEvent;

@@ -37,6 +37,14 @@ public class Spaces
 		this.capacity=capacity;
 		this.resources=resources;
 	}
+	
+	public Spaces(String name, String address, int capacity, String resources)
+	{
+		this.name=name;
+		this.address=address;
+		this.capacity=capacity;
+		this.resources=resources;
+	}
 
 	public int getIdSpace() {
 		return idSpace;

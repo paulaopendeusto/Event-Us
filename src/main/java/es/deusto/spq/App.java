@@ -19,43 +19,45 @@ public class App
 {
     public static void main( String[] args ) 
     {
+    	
     	menuPrincipal window=new menuPrincipal();
     	window.setVisible(true);
-
-    	gestorEspacios objGestor = new gestorEspacios();
-		
     	
- //   	Spaces espacio = objGestor.devolverEspacio(2);
+    	gestorEspacios objGestorEspacios = new gestorEspacios();
+    	gestorEventos objGestorEventos= new gestorEventos();
+    	
+//		Spaces objEspacio = new Spaces("que tal","bilbao",100000,"");
+    			
+//    	objGestorEspacios.crearEspacio(objEspacio);
+//   	objGestorEspacios.modiciarEspacio(5, "nombre", "direccion", 45, "resources");
+//		objGestorEspacios.eliminarEspacio(1);
     	
 //    	List<Spaces> lista = objGestor.listaEspacios();
-//    	
 //    	
 //    	for(Spaces space : lista)
 //    	{
 //    		System.out.println(space.toString());
-//    	}
+//    	}	   	
     	
+    	SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
     	
-//		Spaces objEspacio = new Spaces(2,"bbklive","bilbao",100000,"");
-//		Spaces objEspacio2 = new Spaces(4,"bbklive","bilbao",100000,"");
-//		Spaces objEspacio3 = new Spaces(5,"bbklive","bilbao",100000,"");
+    	Date date = new Date();
+    	System.out.println(date);
+		try {
+			date = format.parse ( "2009-12-31" );
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}   
 		
-//		String pattern = "MM-dd-yyyy";
-//		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-//		Date date = simpleDateFormat.parse("12-01-2018");
-//		
-//		gestorEventos objGestorE = new gestorEventos();
-//		
-//		Event evento = new Event(0, "bbklive", "music", 50, "campside", date, 5, 0);
-//		
+		System.out.println(date);
+
+		
+		Event evento = new Event("hola", "music", 50, "campside", date, 5, 0);
+		
+//		objGestorEventos.crearEvento(evento);
 //		objEspacio.addEvento(evento);
-//		
-//		
-//		objGestor.crearEspacio(objEspacio);
-//		objGestor.crearEspacio(objEspacio2);
-//		objGestor.crearEspacio(objEspacio3);
-//		objGestorE.crearEvento(evento);
-//		objGestor.eliminarEspacio(2);
 		
     }
 }
