@@ -31,6 +31,12 @@ public class gestorEventos
 		// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
 	}
 	
+	public void modiciarEventos(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes)
+	{
+		System.out.println("Modificar evento");
+		DB_DAO_E.getInstance().modificarE(idEvent, name, tipology, price, resources, date, hour, minutes);
+	}
+	
 //	public DefaultListModel<Event> listaEventos() 
 //	{
 //		

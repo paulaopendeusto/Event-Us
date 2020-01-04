@@ -8,6 +8,7 @@ import javax.jdo.Transaction;
 
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import data.*;
@@ -162,6 +163,54 @@ public class DB_DAO_E{
 
 		} catch (Exception ex) {
 			System.err.println(" $ Error a la hora de modificar evento: " + ex.getMessage());
+			ex.printStackTrace();
+			
+			return false;
+			
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
+			}
+			
+		}
+		
+		return true;
+	}
+
+	public boolean modificarE(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes){	
+		
+		try {
+					
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();		
+			
+			tx.begin();
+			
+			
+			Event ev = pm.getObjectById(Event.class , idEvent);
+			System.out.println("Evento: " + ev.getName());
+			
+			ev.setName(name);
+			ev.setTipology(tipology);
+			ev.setPrice(price);
+			ev.setResources(resources);
+			ev.setDateEvent(date);
+			ev.setHour(hour);
+			ev.setMinutes(minutes);
+			
+			pm.makePersistent(ev);
+			
+			System.out.println("Evento modificado!!");
+			
+			tx.commit();
+
+		} catch (Exception ex) {
+			System.err.println(" $ Error a la hora de modificar espacio: " + ex.getMessage());
 			ex.printStackTrace();
 			
 			return false;
