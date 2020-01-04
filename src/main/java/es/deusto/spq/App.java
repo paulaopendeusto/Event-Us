@@ -20,15 +20,21 @@ public class App
     public static void main( String[] args ) 
     {
     	
-    	menuPrincipal window=new menuPrincipal();
-    	window.setVisible(true);
+    	//menuPrincipal window=new menuPrincipal();
+    	//window.setVisible(true);
     	
     	gestorEspacios objGestorEspacios = new gestorEspacios();
     	gestorEventos objGestorEventos= new gestorEventos();
     	
-//		Spaces objEspacio = new Spaces("que tal","bilbao",100000,"");
+    	Spaces s1 = new Spaces("que tal","bilbao",100000,"");
+    	Spaces s2= new Spaces("hey","donosti",50000,"");
     			
-//    	objGestorEspacios.crearEspacio(objEspacio);
+    	objGestorEspacios.crearEspacio(s1);
+    	objGestorEspacios.crearEspacio(s2);
+
+    	
+    	
+    	
 //   	objGestorEspacios.modiciarEspacio(5, "nombre", "direccion", 45, "resources");
 //		objGestorEspacios.eliminarEspacio(1);
     	
@@ -38,7 +44,7 @@ public class App
 //    	{
 //    		System.out.println(space.toString());
 //    	}	   	
-    	
+//    	
     	SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
     	
@@ -54,9 +60,21 @@ public class App
 		System.out.println(date);
 
 		
-		Event evento = new Event("hola", "music", 50, "campside", date, 5, 0);
+		Event e1 = new Event("hola", "music", 50, "campside", date, 5, 0);
+		Event e2 = new Event("hola2", "teatro", 15, "nose", date, 8, 0);
 		
-//		objGestorEventos.crearEvento(evento);
+
+		objGestorEventos.crearEvento(e1);
+		objGestorEventos.crearEvento(e2);
+		
+//		objGestorEspacios.
+		
+		Event e = objGestorEventos.getE(1);
+		System.out.println(e.getName());
+		
+		objGestorEventos.eliminarEvento(1);
+		
+
 //		objEspacio.addEvento(evento);
 		
     }

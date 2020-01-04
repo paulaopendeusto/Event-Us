@@ -3,6 +3,7 @@ package data;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -12,6 +13,7 @@ import javax.jdo.annotations.PrimaryKey;
 public class Event {
 
 	@PrimaryKey
+	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
 	private int idEvent;
 	private String Name;
 	private String Tipology;
@@ -33,7 +35,7 @@ public class Event {
 		this.Minutes = minutes;
 	}
 	
-	public Event( String name, String tipology, float price, String resources, Date date, int hour, int minutes)
+	public Event(String name, String tipology, float price, String resources, Date date, int hour, int minutes)
 	{
 		this.Name = name;
 		this.Tipology = tipology;

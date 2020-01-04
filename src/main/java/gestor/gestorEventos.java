@@ -24,12 +24,21 @@ public class gestorEventos
 		objDao.registrarE(evento);
 	}
 	
-	public List<Event> listaEventos() 
+	public Event getE(int idEvent) 
 	{
+		DB_DAO_E objDao = new DB_DAO_E();
 		
-		return null;
-		// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
+		return objDao.getE(idEvent);
+		
 	}
+//	public List<Event> listaEventos() 
+//	{
+//		DB_DAO_E objDao = new DB_DAO_E();
+//		
+//		objDao.getInstance().
+//		return null;
+//		// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
+//	}
 	
 	public void modiciarEventos(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes)
 	{
