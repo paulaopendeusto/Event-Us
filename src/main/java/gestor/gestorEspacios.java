@@ -11,7 +11,7 @@ public class gestorEspacios
 	public void crearEspacio(Spaces objEspacio) 
 	{
 		
-		
+		System.out.println("crear espacio");
 		DB_DAO_S.getInstance().registrarS(objEspacio);
 		
 	}
@@ -24,10 +24,10 @@ public class gestorEspacios
 		DB_DAO_S.getInstance().eliminarS(idEspacio);
 	}
 	
-	public void modiciarEspacio(int idSpace, String name, String address, int capacity, String resources)
+	public void modiciarEspacio(Spaces espacio)
 	{
 		System.out.println("Modificar espacio");
-		DB_DAO_S.getInstance().modificarS(idSpace, name, address, capacity, resources);
+		DB_DAO_S.getInstance().modificarS(espacio);
 	}
 	
 	public List<Spaces> listaEspacios()

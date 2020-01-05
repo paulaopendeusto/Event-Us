@@ -182,7 +182,7 @@ public class DB_DAO_S {
 		return true;
 	}
 
-	public boolean modificarS(int idSpace, String name, String address, int capacity, String resources){	
+	public boolean modificarS(Spaces espacio){	
 		
 		try {
 					
@@ -192,13 +192,15 @@ public class DB_DAO_S {
 			tx.begin();
 			
 			
-			Spaces sp = pm.getObjectById(Spaces.class , idSpace);
-			System.out.println("Espacio: " + sp.getName());
+			Spaces sp = pm.getObjectById(Spaces.class , espacio.getIdSpace());
 			
-			sp.setName(name);
-			sp.setAddress(address);
-			sp.setCapacity(capacity);
-			sp.setResources(resources);
+			sp.setListaEventos(espacio.getListaEventos());
+//			System.out.println("Espacio: " + sp.getName());
+			
+			sp.setName(espacio.getName());
+			sp.setAddress(espacio.getAddress());
+			sp.setCapacity(espacio.getCapacity());
+			sp.setResources(espacio.getResources());
 			
 			pm.makePersistent(sp);
 			

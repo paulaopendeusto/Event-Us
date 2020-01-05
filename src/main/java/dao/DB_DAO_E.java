@@ -146,7 +146,8 @@ public class DB_DAO_E{
 		return true;
 	}
 	
-	public boolean modificarE(int idEvento){	
+
+	public boolean modificarE(Event evento){	
 		
 		try {
 					
@@ -156,7 +157,19 @@ public class DB_DAO_E{
 			tx.begin();
 			
 			
-			// modificar evento
+			Event e = pm.getObjectById(Event.class , evento.getIdEvent());
+			
+			
+			e.setName(evento.getName());
+			e.setHour(evento.getHour());
+			e.setDateEvent(evento.getDateEvent());
+			e.setMinutes(evento.getMinutes());
+			e.setPrice(evento.getPrice());
+			e.setResources(evento.getResources());
+			e.setTipology(evento.getTipology());
+			
+			pm.makePersistent(e);
+			
 			System.out.println("Evento modificado!!");
 			
 			tx.commit();
@@ -181,54 +194,36 @@ public class DB_DAO_E{
 		
 		return true;
 	}
+	
+	public List<Event> getEventos() {
+		// TODO Auto-generated method stub
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+	
 
-	public boolean modificarE(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes){	
-		
+		List<Event> listEventos = null;
+	
 		try {
-					
-			pm = pmf.getPersistenceManager();
-			tx = pm.currentTransaction();		
-			
+			//System.out.println("   * Buscando usuario con email: " + email);
 			tx.begin();
+			Query query = pm.newQuery(Event.class);
+			@SuppressWarnings("unchecked")
+			List<Event> eventos = (List<Event>) query.execute();
 			
-			
-			Event ev = pm.getObjectById(Event.class , idEvent);
-			System.out.println("Evento: " + ev.getName());
-			
-			ev.setName(name);
-			ev.setTipology(tipology);
-			ev.setPrice(price);
-			ev.setResources(resources);
-			ev.setDateEvent(date);
-			ev.setHour(hour);
-			ev.setMinutes(minutes);
-			
-			pm.makePersistent(ev);
-			
-			System.out.println("Evento modificado!!");
-			
+			listEventos = new ArrayList<Event>(eventos); 
 			tx.commit();
-
 		} catch (Exception ex) {
-			System.err.println(" $ Error a la hora de modificar espacio: " + ex.getMessage());
-			ex.printStackTrace();
-			
-			return false;
-			
+			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
 			
-			if (pm != null && !pm.isClosed()) {
-				pm.close();
-				// ATTENTION -  Datanucleus detects that the objects in memory were changed and they are flushed to DB
-			}
-			
+
+			pm.close();
 		}
 		
-		return true;
+		return listEventos;
 	}
-
 
 }
