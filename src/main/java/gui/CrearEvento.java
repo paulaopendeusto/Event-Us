@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
 import data.Event;
+import data.Spaces;
+import gestor.gestorEspacios;
 import gestor.gestorEventos;
 
 import javax.swing.JTextField;
@@ -16,14 +18,18 @@ import javax.swing.JButton;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import javax.swing.Action;
+import javax.swing.DefaultListSelectionModel;
+
 import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 import javax.swing.JFormattedTextField;
 import javax.swing.JList;
 import javax.swing.border.LineBorder;
+
 import java.awt.Color;
 import javax.swing.AbstractListModel;
 import javax.swing.ListSelectionModel;
@@ -32,7 +38,7 @@ public class CrearEvento {
 
 	private JFrame frame;
 	private JSpinner spinner;
-	private final Action action = new SwingAction();
+	gestorEspacios gespacios = new gestorEspacios();
 	gestorEventos objGestor = new gestorEventos();
 	private JTextField textFieldName;
 	private JTextField textFieldtipo;
@@ -40,6 +46,8 @@ public class CrearEvento {
 	private JTextField textFieldhora;
 	private JTextField textFieldminuto;
 	private JFormattedTextField frmtdtxtfldFecha;
+	private JTextField mes;
+	private JTextField dia;
 
 	public CrearEvento() {
 		initialize();
@@ -54,51 +62,23 @@ public class CrearEvento {
 		frame.setBounds(100, 100, 600, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
-		JButton btnAnadirEspacio = new JButton("Añadir evento");
-		btnAnadirEspacio.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
 				
-				if(textFieldName.getText()!=null) 
-				{
-					String pattern = "MM-dd-yyyy";
-					SimpleDateFormat format = new SimpleDateFormat(pattern);
-					Date date = null;
-					try {
-						date = (Date) format.parse(frmtdtxtfldFecha.getText());
-					} catch (ParseException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					Event objevento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(),date , Integer.parseInt(textFieldhora.getText(), Integer.parseInt(textFieldminuto.getText())), 0);					
-					objGestor.crearEvento(objevento);
-
-				}
-				
-				
-			}
-		});
-		btnAnadirEspacio.setAction(action);
-		btnAnadirEspacio.setBounds(447, 365, 108, 23);
-		frame.getContentPane().add(btnAnadirEspacio);
-		
 		JLabel lblRecursos = new JLabel("Recursos:");
-		lblRecursos.setBounds(84, 323, 52, 14);
+		lblRecursos.setBounds(84, 303, 82, 14);
 		frame.getContentPane().add(lblRecursos);
 		
 		JLabel lblPrecio = new JLabel("Precio:");
-		lblPrecio.setBounds(84, 273, 63, 14);
+		lblPrecio.setBounds(84, 263, 91, 14);
 		frame.getContentPane().add(lblPrecio);
 		
 		spinner = new JSpinner();
-		spinner.setBounds(169, 256, 108, 29);
+		spinner.setBounds(176, 256, 108, 29);
 		spinner.setModel(new SpinnerNumberModel(new Integer(0), new Integer(0), null, new Integer(5)));
 		frame.getContentPane().add(spinner);
 		
 		
 		textFieldresources = new JTextField();
-		textFieldresources.setBounds(169, 320, 108, 20);
-		textFieldresources.setText("TextFieldresources");
+		textFieldresources.setBounds(176, 300, 108, 20);
 		frame.getContentPane().add(textFieldresources);
 		textFieldresources.setColumns(10);
 		
@@ -112,7 +92,7 @@ public class CrearEvento {
 		textFieldName.setColumns(10);
 		
 		JLabel lblTipologa = new JLabel("Tipología:");
-		lblTipologa.setBounds(84, 228, 46, 14);
+		lblTipologa.setBounds(84, 228, 91, 14);
 		frame.getContentPane().add(lblTipologa);
 		
 		textFieldtipo = new JTextField();
@@ -121,54 +101,73 @@ public class CrearEvento {
 		textFieldtipo.setColumns(10);
 		
 		JLabel lblFechaYHora = new JLabel("Fecha y hora:");
-		lblFechaYHora.setBounds(400, 200, 74, 14);
+		lblFechaYHora.setBounds(396, 203, 108, 14);
 		frame.getContentPane().add(lblFechaYHora);
 		
 		frmtdtxtfldFecha = new JFormattedTextField();
-		frmtdtxtfldFecha.setBounds(396, 228, 86, 20);
+		frmtdtxtfldFecha.setText("YYYY");
+		frmtdtxtfldFecha.setToolTipText("yyyy");
+		frmtdtxtfldFecha.setBounds(396, 228, 35, 20);
 		frame.getContentPane().add(frmtdtxtfldFecha);
 		
 		textFieldhora = new JTextField();
+		textFieldhora.setText("hh");
 		textFieldhora.setToolTipText("hh");
 		textFieldhora.setBounds(406, 260, 27, 20);
 		frame.getContentPane().add(textFieldhora);
 		textFieldhora.setColumns(10);
 		
 		JLabel label = new JLabel(":");
-		label.setBounds(436, 263, 4, 14);
+		label.setBounds(438, 263, 4, 14);
 		frame.getContentPane().add(label);
 		
 		textFieldminuto = new JTextField();
+		textFieldminuto.setText("mm");
 		textFieldminuto.setToolTipText("mm");
 		textFieldminuto.setBounds(447, 260, 27, 20);
 		frame.getContentPane().add(textFieldminuto);
 		textFieldminuto.setColumns(10);
 		
-		JList list = new JList();
-		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		list.setModel(new AbstractListModel() {
-			String[] values = new String[] {"Espacio 1", "Espacio 2", "Espacio 3"};
-			public int getSize() {
-				return values.length;
-			}
-			public Object getElementAt(int index) {
-				return values[index];
+		JLabel lblSeleccioneElEspacio = new JLabel("Seleccione el espacio donde ocurrirá el evento:");
+		lblSeleccioneElEspacio.setBounds(169, 24, 305, 14);
+		frame.getContentPane().add(lblSeleccioneElEspacio);
+		
+		mes = new JTextField();
+		mes.setText("MM");
+		mes.setToolTipText("MM");
+		mes.setBounds(434, 228, 25, 20);
+		frame.getContentPane().add(mes);
+		mes.setColumns(10);
+		
+		dia = new JTextField();
+		dia.setText("dd");
+		dia.setToolTipText("dd");
+		dia.setBounds(462, 228, 27, 20);
+		frame.getContentPane().add(dia);
+		dia.setColumns(10);
+		
+		java.util.List<Spaces> espacios = gespacios.listaEspacios();
+		Spaces[] arrayespacios = new Spaces[espacios.size()];
+		espacios.toArray(arrayespacios);
+		
+		JList <Spaces> listaEspacios = new JList(arrayespacios);
+		listaEspacios.setVisibleRowCount(4);
+		listaEspacios.setBounds(50, 49, 505, 126);
+		listaEspacios.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION);
+		frame.getContentPane().add(listaEspacios);
+		
+		
+		JButton btnAnadirEspacio = new JButton("Añadir evento");
+		btnAnadirEspacio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (listaEspacios.getSelectedIndex() != -1) {                       
+	                    System.out.println(listaEspacios.getSelectedValue());   
+	                 } 
 			}
 		});
-		list.setBorder(new LineBorder(new Color(0, 0, 0)));
-		list.setBounds(169, 146, 244, -89);
-		frame.getContentPane().add(list);
+		btnAnadirEspacio.setBounds(406, 365, 149, 23);
+		frame.getContentPane().add(btnAnadirEspacio);
 		
-		JLabel lblSeleccioneElEspacio = new JLabel("Seleccione el espacio donde ocurrirá el evento:");
-		lblSeleccioneElEspacio.setBounds(169, 24, 244, 14);
-		frame.getContentPane().add(lblSeleccioneElEspacio);
 	}
-	private class SwingAction extends AbstractAction {
-		public SwingAction() {
-			putValue(NAME, "CreateAction");
-			putValue(SHORT_DESCRIPTION, "Para crear el nuevo espacio");
-		}
-		public void actionPerformed(ActionEvent e) {
-		}
-	}
+	
 }
