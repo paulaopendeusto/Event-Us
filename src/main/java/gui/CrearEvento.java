@@ -39,7 +39,7 @@ public class CrearEvento {
 	private JFrame frame;
 	private JSpinner spinner;
 	gestorEspacios gespacios = new gestorEspacios();
-	gestorEventos objGestor = new gestorEventos();
+	gestorEventos geventos = new gestorEventos();
 	private JTextField textFieldName;
 	private JTextField textFieldtipo;
 	private JTextField textFieldresources;
@@ -49,7 +49,7 @@ public class CrearEvento {
 	private JTextField mes;
 	private JTextField dia;
 
-	public CrearEvento() {
+	public CrearEvento(){
 		initialize();
 	}
 
@@ -161,7 +161,21 @@ public class CrearEvento {
 		btnAnadirEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (listaEspacios.getSelectedIndex() != -1) {                       
-	                    System.out.println(listaEspacios.getSelectedValue());   
+	                    System.out.println(listaEspacios.getSelectedValue()); 
+	                    
+	                    Date date = null;
+						try {
+							date = (Date) new SimpleDateFormat("yyyy-MM-dd").parse("$frmtdtxtfldFecha.getText()-$mes.getText()-$dia.getText()");
+						} catch (ParseException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+	                    
+	                    Event evento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(), date, Integer.parseInt(textFieldhora.getText()), Integer.parseInt(textFieldminuto.getText()));
+	                    geventos.crearEvento(evento);
+	                    
+	                    frame.dispose();
+	                    
 	                 } 
 			}
 		});
