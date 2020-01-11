@@ -51,7 +51,7 @@ public class CrearEvento {
 		frame = new JFrame();
 		frame.setVisible(true);
 		frame.setBounds(100, 100, 600, 450);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 				
 		JLabel lblRecursos = new JLabel("Recursos:");
@@ -174,7 +174,7 @@ public class CrearEvento {
 	                    espacioselec.addEvento(evento);
 	                    gespacios.modiciarEspacio(espacioselec);
 	                    
-	                    frame.dispose();
+	                    frame.setVisible(false);
 	                    
 	                 } 
 			}

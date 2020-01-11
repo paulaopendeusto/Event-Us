@@ -6,8 +6,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.ListModel;
+
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
@@ -16,6 +15,7 @@ import data.Event;
 import gestor.gestorEventos;
 
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.DefaultListModel;
 import javax.swing.DefaultListSelectionModel;
 import javax.swing.JButton;
@@ -36,7 +36,7 @@ public class menuEventos extends JFrame {
 	 * Create the frame.
 	 */
 	public menuEventos() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 600, 450);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -47,8 +47,6 @@ public class menuEventos extends JFrame {
 		lblGestionarEspacios.setFont(new Font("Tahoma", Font.BOLD, 30));
 		lblGestionarEspacios.setBounds(136, 41, 333, 35);
 		contentPane.add(lblGestionarEspacios);
-		
-		
 			
 		gestorEventos geventos = new gestorEventos();
 		java.util.List<Event> eventos = geventos.listaEventos();
@@ -85,22 +83,45 @@ public class menuEventos extends JFrame {
 //		frame.getContentPane().add(textPane);
 		
 		
-		JButton btnNewButton = new JButton("Crear Evento");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnCrearEvento = new JButton("Crear Evento");
+		btnCrearEvento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				CrearEvento windowCrearEvento=new CrearEvento();
+				setVisible(false);
+				dispose();
 			}
 		});
-		btnNewButton.setBounds(46, 333, 143, 29);
-		contentPane.add(btnNewButton);
+		btnCrearEvento.setBounds(46, 333, 143, 29);
+		contentPane.add(btnCrearEvento);
 		
-		JButton btnNewButton_1 = new JButton("Modificar Evento");
-		btnNewButton_1.setBounds(206, 333, 161, 29);
-		contentPane.add(btnNewButton_1);
+		JButton btnModEvento = new JButton("Modificar Evento");
+		btnModEvento.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//ModificarEvento windowModificarEvento=new ModificarEvento();
+			}
+		});
+		btnModEvento.setBounds(206, 333, 161, 29);
+		contentPane.add(btnModEvento);
 		
 		JButton btnNewButton_2 = new JButton("Eliminar Evento");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if (listaEventos.getSelectedIndex() != -1) {
+
+				geventos.eliminarEvento(listaEventos.getSelectedValue().getIdEvent());
+				//listaEventos.remove(listaEventos.getSelectedIndex());
+				setVisible(false);
+				dispose();
+				JOptionPane.showMessageDialog(frame,"Evento eliminado correctamente.");
+				menuEventos windowEventos=new menuEventos();
+		    	windowEventos.setVisible(true);
+			}else {
+				JOptionPane.showMessageDialog(frame,
+					    "Por favor, seleccione un evento para poder eliminarlo.",
+					    "Ningún evento seleccionado",
+					    JOptionPane.ERROR_MESSAGE);
+			} 
+				
 			}
 		});
 		btnNewButton_2.setBounds(382, 333, 148, 29);
