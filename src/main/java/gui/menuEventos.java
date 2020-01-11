@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ListModel;
 import javax.swing.border.EmptyBorder;
@@ -16,6 +17,7 @@ import gestor.gestorEventos;
 
 import javax.swing.JList;
 import javax.swing.DefaultListModel;
+import javax.swing.DefaultListSelectionModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -47,9 +49,22 @@ public class menuEventos extends JFrame {
 		contentPane.add(lblGestionarEspacios);
 		
 		
-		JList list = new JList();
-		list.setBounds(46, 104, 484, 191);
-		contentPane.add(list);
+			
+		gestorEventos geventos = new gestorEventos();
+		java.util.List<Event> eventos = geventos.listaEventos();
+		Event[] arrayeventos = new Event[eventos.size()];
+		eventos.toArray(arrayeventos);
+		
+		JList <Event> listaEventos = new JList(arrayeventos);
+		listaEventos.setVisibleRowCount(4);
+		listaEventos.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION);
+		
+		JScrollPane scrollLista = new JScrollPane();
+		scrollLista.setBounds(46, 104, 484, 191);
+		scrollLista.setViewportView(listaEventos);
+		contentPane.add(scrollLista);
+
+		
 		
 //		frame = new JFrame();
 //		frame.setBounds(100, 100, 1000, 400);

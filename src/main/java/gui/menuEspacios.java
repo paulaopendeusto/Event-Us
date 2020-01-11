@@ -5,11 +5,17 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
+
+import data.Spaces;
+import gestor.gestorEspacios;
+
 import javax.swing.JList;
+import javax.swing.DefaultListSelectionModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -36,9 +42,20 @@ public class menuEspacios extends JFrame {
 		lblGestionarEspacios.setBounds(136, 41, 333, 35);
 		contentPane.add(lblGestionarEspacios);
 		
-		JList list = new JList();
-		list.setBounds(46, 104, 484, 191);
-		contentPane.add(list);
+		gestorEspacios gespacios = new gestorEspacios();
+		java.util.List<Spaces> espacios = gespacios.listaEspacios();
+		Spaces[] arrayespacios = new Spaces[espacios.size()];
+		espacios.toArray(arrayespacios);
+		
+		JList <Spaces> listaEspacios = new JList(arrayespacios);
+		listaEspacios.setVisibleRowCount(4);
+		listaEspacios.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION);
+		
+		JScrollPane scrollLista = new JScrollPane();
+		scrollLista.setBounds(50, 100, 505, 126);
+		scrollLista.setViewportView(listaEspacios);
+		contentPane.add(scrollLista);
+
 		
 		JButton btnNewButton = new JButton("Crear espacio");
 		btnNewButton.addActionListener(new ActionListener() {

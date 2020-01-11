@@ -13,12 +13,7 @@ import javax.jdo.annotations.PrimaryKey;
 @PersistenceCapable(detachable = "true")
 public class Spaces 
 {
-	@Override
-	public String toString() {
-		return "Spaces [idSpace=" + idSpace + ", name=" + name + ", address=" + address + ", capacity=" + capacity
-				+ ", resources=" + resources + ", listaEventos=" + listaEventos + "]";
-	}
-
+	
 	@PrimaryKey
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
 	private int idSpace;
@@ -31,15 +26,6 @@ public class Spaces
 	@Element(column="idSpace")
 	private ArrayList<Event> listaEventos;
 	
-	public Spaces(int idSpace, String name, String address, int capacity, String resources)
-	{
-		this.idSpace=idSpace;
-		this.name=name;
-		this.address=address;
-		this.capacity=capacity;
-		this.resources=resources;
-		this.listaEventos = new ArrayList<Event>();
-	}
 	
 	public Spaces(String name, String address, int capacity, String resources)
 	{
@@ -47,6 +33,14 @@ public class Spaces
 		this.address=address;
 		this.capacity=capacity;
 		this.resources=resources;
+		this.listaEventos = new ArrayList<Event>();
+
+	}
+	public Spaces()
+	{
+		
+		this.listaEventos = new ArrayList<Event>();
+
 	}
 
 	public int getIdSpace() {
@@ -101,6 +95,13 @@ public class Spaces
 	public void setListaEventos(ArrayList<Event> listaEventos) {
 		this.listaEventos = listaEventos;
 	}
+	
+	@Override
+	public String toString() {
+		return "id:" + idSpace + ", " + name + ", localización:" + address + ", capacidad:" + capacity
+				+ ", recursos:" + resources ;
+	}
+
 	
 		
 }

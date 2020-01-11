@@ -22,6 +22,7 @@ import java.text.SimpleDateFormat;
 
 import javax.swing.JFormattedTextField;
 import javax.swing.JList;
+import javax.swing.JScrollPane;
 
 
 public class CrearEvento {
@@ -142,9 +143,12 @@ public class CrearEvento {
 		
 		JList <Spaces> listaEspacios = new JList(arrayespacios);
 		listaEspacios.setVisibleRowCount(4);
-		listaEspacios.setBounds(50, 49, 505, 126);
 		listaEspacios.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION);
-		frame.getContentPane().add(listaEspacios);
+		
+		JScrollPane scrollLista = new JScrollPane();
+		scrollLista.setBounds(50, 49, 505, 126);
+		scrollLista.setViewportView(listaEspacios);
+		frame.getContentPane().add(scrollLista);
 		
 		
 		JButton btnAnadirEspacio = new JButton("Añadir evento");

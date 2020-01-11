@@ -23,19 +23,7 @@ public class Event {
 	private int Hour;
 	private int Minutes;
 	
-	public Event(int idEvent, String name, String tipology, float price, String resources, Date date, int hour, int minutes)
-	{
-		this.idEvent = idEvent;
-		this.Name = name;
-		this.Tipology = tipology;
-		this.Price = price;
-		this.Resources = resources;
-		this.DateEvent = date;
-		this.Hour = hour;
-		this.Minutes = minutes;
-		
-	}
-	
+
 	public Event(String name, String tipology, float price, String resources, Date date, int hour, int minutes)
 	{
 		this.Name = name;
@@ -109,6 +97,12 @@ public class Event {
 
 	public void setPrice(float price) {
 		Price = price;
+	}
+
+	@Override
+	public String toString() {
+		return  idEvent + ": " + Name + ". Tipo de evento: " + Tipology + ". Precio:" + Price
+				+ ". Fecha:" + DateEvent + ", hora:" + Hour + ":" + Minutes;
 	}
 	
 	
