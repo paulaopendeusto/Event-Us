@@ -15,7 +15,6 @@ public class Spaces
 {
 	
 	@PrimaryKey
-	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
 	private int idSpace;
 	private String name;
 	private String address;
@@ -42,6 +41,18 @@ public class Spaces
 		this.listaEventos = new ArrayList<Event>();
 
 	}
+	
+	public Spaces(Spaces s)
+	{
+		this.idSpace= s.getIdSpace();
+		this.name=s.getName();
+		this.address=s.getAddress();
+		this.capacity=s.getCapacity();
+		this.resources=s.getResources();
+		this.listaEventos = s.getListaEventos();
+
+	}
+	
 
 	public int getIdSpace() {
 		return idSpace;
@@ -99,7 +110,7 @@ public class Spaces
 	@Override
 	public String toString() {
 		return "id:" + idSpace + ", " + name + ", localización:" + address + ", capacidad:" + capacity
-				+ ", recursos:" + resources ;
+				+ ", recursos:" + resources + "no tiene evento: ";
 	}
 
 	

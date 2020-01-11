@@ -75,6 +75,15 @@ public class menuEspacios extends JFrame {
 		
 		JButton btnModEspacio = new JButton("Modificar Espacio");
 		btnModEspacio.setBounds(206, 333, 161, 29);
+		btnModEspacio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+//				ModificarEspacio windowModEspacio = new  ModificarEspacio();
+//				setVisible(false);
+//				dispose();
+			
+			}
+		});	
 		contentPane.add(btnModEspacio);
 		
 		JButton btnEliminarEspacio = new JButton("Eliminar Espacio");

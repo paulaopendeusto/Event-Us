@@ -1,10 +1,8 @@
 package gui;
 
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.BorderLayout;
 import javax.swing.SwingConstants;
 
 import data.Spaces;
@@ -28,7 +26,6 @@ public class CrearEspacio {
 	private JTextField txtTextfieldAdress;
 	private JTextField txtTextfieldresources;
 	private JSpinner spinner;
-	private final Action action = new SwingAction();
 	gestorEspacios objGestor = new gestorEspacios();
 
 
@@ -60,7 +57,6 @@ public class CrearEspacio {
 				
 			}
 		});
-		btnAnadirEspacio.setAction(action);
 		btnAnadirEspacio.setBounds(447, 365, 108, 23);
 		frame.getContentPane().add(btnAnadirEspacio);
 		
@@ -111,12 +107,5 @@ public class CrearEspacio {
 		lblNewLabel.setBounds(0, 0, 584, 411);
 		frame.getContentPane().add(lblNewLabel);
 	}
-	private class SwingAction extends AbstractAction {
-		public SwingAction() {
-			putValue(NAME, "CreateAction");
-			putValue(SHORT_DESCRIPTION, "Para crear el nuevo espacio");
-		}
-		public void actionPerformed(ActionEvent e) {
-		}
-	}
+	
 }

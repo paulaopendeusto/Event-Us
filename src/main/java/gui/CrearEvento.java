@@ -154,9 +154,10 @@ public class CrearEvento {
 		JButton btnAnadirEspacio = new JButton("Añadir evento");
 		btnAnadirEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (listaEspacios.getSelectedIndex() != -1) {                       
+				if (listaEspacios.getSelectedIndex() != -1) {
+					int idSpace =listaEspacios.getSelectedValue().getIdSpace();
 	                    System.out.println(listaEspacios.getSelectedValue()); 
-	                    System.out.println(listaEspacios.getSelectedValue().getIdSpace()); 
+	                    System.out.println(idSpace); 
 
 	                    
 	                    Date date = null;
@@ -168,12 +169,8 @@ public class CrearEvento {
 						}
 	                    
 	                    Event evento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(), date, Integer.parseInt(textFieldhora.getText()), Integer.parseInt(textFieldminuto.getText()));
-	                    geventos.crearEvento(evento);
-	                    
-	                    Spaces espacioselec = listaEspacios.getSelectedValue();
-	                    espacioselec.addEvento(evento);
-	                    gespacios.modiciarEspacio(espacioselec);
-	                    
+	                    geventos.crearEvento(evento, idSpace);
+	                   	                    
 	                    frame.setVisible(false);
 	                    
 	                 } 

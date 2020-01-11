@@ -67,22 +67,6 @@ public class menuEventos extends JFrame {
 		
 		
 		frame = new JFrame();
-//		frame.setBounds(100, 100, 1000, 400);
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.getContentPane().setLayout(null);
-//		
-//		JTextArea textPane = new JTextArea();
-//		textPane.setFont(new Font("Calibri Light", Font.PLAIN, 21));
-//		textPane.setWrapStyleWord(true);
-//		textPane.setBounds(0, 0, 970, 270);
-//		gestorEventos objGestorEventos=new gestorEventos();
-//		List<Event> eventos = objGestorEventos.listaEventos();
-//		
-//		for (Event e : eventos) {
-//	        textPane.append(e.toString() + "\n"); 
-//	    }
-//		
-//		frame.getContentPane().add(textPane);
 		
 		
 		JButton btnCrearEvento = new JButton("Crear Evento");
@@ -100,6 +84,8 @@ public class menuEventos extends JFrame {
 		btnModEvento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//ModificarEvento windowModificarEvento=new ModificarEvento();
+//				setVisible(false);
+//				dispose();
 			}
 		});
 		btnModEvento.setBounds(206, 333, 161, 29);
@@ -111,7 +97,6 @@ public class menuEventos extends JFrame {
 				if (listaEventos.getSelectedIndex() != -1) {
 
 				geventos.eliminarEvento(listaEventos.getSelectedValue().getIdEvent());
-				//listaEventos.remove(listaEventos.getSelectedIndex());
 				setVisible(false);
 				dispose();
 				JOptionPane.showMessageDialog(frame,"Evento eliminado correctamente.");

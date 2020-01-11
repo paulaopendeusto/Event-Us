@@ -26,6 +26,8 @@ public class DB_DAO_S {
 	
 	private static DB_DAO_S instance;
 		
+	
+	//public DB_DAO_S 
 	public static DB_DAO_S getInstance() {
 		if (instance == null) {
 			instance = new DB_DAO_S();
@@ -78,11 +80,8 @@ public class DB_DAO_S {
 	public Spaces getS(int idSpace) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-		Transaction tx = pm.currentTransaction();
-		String nombre;
-
-		
-		Spaces espacio = new Spaces();;
+		Transaction tx = pm.currentTransaction();		
+		Spaces espacio= new Spaces();
 	
 		try {
 			//System.out.println("   * Buscando usuario con email: " + email);
@@ -96,7 +95,9 @@ public class DB_DAO_S {
 				if (s.getIdSpace() == (idSpace)) {
 				
 					//espacio = new Spaces(idSpace, u.getName(),u.getAddress(),u.getCapacity(),u.getResources());
-					espacio = s;
+					espacio = new Spaces(s);
+					System.out.println("de BD:"+s.toString());
+					System.out.println("EL ASIGNADO: "+espacio.toString());
 					
 				}
 
@@ -113,6 +114,7 @@ public class DB_DAO_S {
 			pm.close();
 		}
 		
+		System.out.println("Espacio que paso: "+espacio.toString());
 		return espacio;
 	}
 	
@@ -132,6 +134,9 @@ public class DB_DAO_S {
 			List<Spaces> espacios = (List<Spaces>) query.execute();
 			
 			espaciosLista = new ArrayList<Spaces>(espacios); 
+			for (Spaces e: espaciosLista) {System.out.println("---------"+e.toString());}
+			
+			
 			tx.commit();
 		} catch (Exception ex) {
 			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
@@ -140,10 +145,11 @@ public class DB_DAO_S {
 				tx.rollback();
 			}
 			
+			for (Spaces e: espaciosLista) {System.out.println(e.toString()+"-------");}
 
 			pm.close();
 		}
-		
+
 		return espaciosLista;
 	}
 	public boolean eliminarS(int idEspacio){	
@@ -202,6 +208,7 @@ public class DB_DAO_S {
 			sp.setAddress(espacio.getAddress());
 			sp.setCapacity(espacio.getCapacity());
 			sp.setResources(espacio.getResources());
+			sp.setIdSpace(espacio.getIdSpace());
 			
 			pm.makePersistent(sp);
 			

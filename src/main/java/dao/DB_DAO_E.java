@@ -82,7 +82,6 @@ public class DB_DAO_E{
 		Event evento = null;
 
 		try {
-		//System.out.println("   * Buscando usuario con email: " + email);
 		tx.begin();
 		Query query = pm.newQuery(Event.class);
 		@SuppressWarnings("unchecked")
@@ -90,7 +89,6 @@ public class DB_DAO_E{
 		for (Event u  : eventos) {
 		if (u.getIdEvent() == (idEvent)) {
 
-//		evento = new Event(idEvent, u.getName(),u.getTipology(),u.getPrice(),u.getResources(), u.getDateEvent(), u.getHour(), u.getMinutes());
 		evento = u;
 		}
 
@@ -120,6 +118,7 @@ public class DB_DAO_E{
 			tx.begin();
 			
 			Event ev = pm.getObjectById(Event.class , idEvento);
+			System.out.println("El evento que elimino ahora mismo es : "+ ev.toString());
 			pm.deletePersistent(ev);
 			System.out.println("Evento eliminado!!");
 			
@@ -167,6 +166,7 @@ public class DB_DAO_E{
 			e.setPrice(evento.getPrice());
 			e.setResources(evento.getResources());
 			e.setTipology(evento.getTipology());
+			e.setIdEvent(evento.getIdEvent());
 			
 			pm.makePersistent(e);
 			
