@@ -50,6 +50,8 @@ public class menuEventos extends JFrame {
 			
 		gestorEventos geventos = new gestorEventos();
 		java.util.List<Event> eventos = geventos.listaEventos();
+		for(int i = 0; i<eventos.size(); i++) {
+			System.out.println(eventos.get(i).toString());}
 		Event[] arrayeventos = new Event[eventos.size()];
 		eventos.toArray(arrayeventos);
 		
@@ -64,7 +66,7 @@ public class menuEventos extends JFrame {
 
 		
 		
-//		frame = new JFrame();
+		frame = new JFrame();
 //		frame.setBounds(100, 100, 1000, 400);
 //		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		frame.getContentPane().setLayout(null);
@@ -103,8 +105,8 @@ public class menuEventos extends JFrame {
 		btnModEvento.setBounds(206, 333, 161, 29);
 		contentPane.add(btnModEvento);
 		
-		JButton btnNewButton_2 = new JButton("Eliminar Evento");
-		btnNewButton_2.addActionListener(new ActionListener() {
+		JButton btnEliminarEvento = new JButton("Eliminar Evento");
+		btnEliminarEvento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (listaEventos.getSelectedIndex() != -1) {
 
@@ -124,7 +126,7 @@ public class menuEventos extends JFrame {
 				
 			}
 		});
-		btnNewButton_2.setBounds(382, 333, 148, 29);
-		contentPane.add(btnNewButton_2);
+		btnEliminarEvento.setBounds(382, 333, 148, 29);
+		contentPane.add(btnEliminarEvento);
 	}
 }

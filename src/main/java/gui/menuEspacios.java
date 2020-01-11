@@ -15,6 +15,7 @@ import data.Spaces;
 import gestor.gestorEspacios;
 
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.DefaultListSelectionModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -24,7 +25,7 @@ import java.awt.Font;
 public class menuEspacios extends JFrame {
 
 	private JPanel contentPane;
-
+	JFrame frame = new JFrame();
 
 	/**
 	 * Create the frame.
@@ -44,6 +45,8 @@ public class menuEspacios extends JFrame {
 		
 		gestorEspacios gespacios = new gestorEspacios();
 		java.util.List<Spaces> espacios = gespacios.listaEspacios();
+		for(int i = 0; i<espacios.size(); i++) {
+			System.out.println(espacios.get(i).toString());}
 		Spaces[] arrayespacios = new Spaces[espacios.size()];
 		espacios.toArray(arrayespacios);
 		
@@ -57,27 +60,45 @@ public class menuEspacios extends JFrame {
 		contentPane.add(scrollLista);
 
 		
-		JButton btnNewButton = new JButton("Crear espacio");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnCrearEspacio = new JButton("Crear espacio");
+		btnCrearEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
 				CrearEspacio windowCrearEspacio=new CrearEspacio();
+				setVisible(false);
+				dispose();
 			
 			}
 		});	
-		btnNewButton.setBounds(46, 333, 143, 29);
-		contentPane.add(btnNewButton);
+		btnCrearEspacio.setBounds(46, 333, 143, 29);
+		contentPane.add(btnCrearEspacio);
 		
-		JButton btnNewButton_1 = new JButton("Modificar Espacio");
-		btnNewButton_1.setBounds(206, 333, 161, 29);
-		contentPane.add(btnNewButton_1);
+		JButton btnModEspacio = new JButton("Modificar Espacio");
+		btnModEspacio.setBounds(206, 333, 161, 29);
+		contentPane.add(btnModEspacio);
 		
-		JButton btnNewButton_2 = new JButton("Eliminar Espacio");
-		btnNewButton_2.addActionListener(new ActionListener() {
+		JButton btnEliminarEspacio = new JButton("Eliminar Espacio");
+		btnEliminarEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if (listaEspacios.getSelectedIndex() != -1) {
+
+					gespacios.eliminarEspacio(listaEspacios.getSelectedValue().getIdSpace());
+					//listaEventos.remove(listaEventos.getSelectedIndex());
+					setVisible(false);
+					dispose();
+					JOptionPane.showMessageDialog(frame, "Espacio eliminado correctamente, así como sus eventos asociados");
+					menuEspacios windowEventos=new menuEspacios();
+			    	windowEventos.setVisible(true);
+				}else {
+					JOptionPane.showMessageDialog(frame,
+						    "Por favor, seleccione un espacio para poder eliminarlo.",
+						    "Ningún espacio seleccionado",
+						    JOptionPane.ERROR_MESSAGE);
+				} 
+				
 			}
 		});
-		btnNewButton_2.setBounds(382, 333, 148, 29);
-		contentPane.add(btnNewButton_2);
+		btnEliminarEspacio.setBounds(382, 333, 148, 29);
+		contentPane.add(btnEliminarEspacio);
 	}
 }
