@@ -1,10 +1,7 @@
 package gui;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 import data.Event;
 import data.Spaces;
@@ -15,24 +12,17 @@ import javax.swing.JTextField;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.JButton;
-import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
-import javax.swing.Action;
 import javax.swing.DefaultListSelectionModel;
 
 import java.awt.event.ActionListener;
-import java.sql.Date;
+import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 
 import javax.swing.JFormattedTextField;
 import javax.swing.JList;
-import javax.swing.border.LineBorder;
 
-import java.awt.Color;
-import javax.swing.AbstractListModel;
-import javax.swing.ListSelectionModel;
 
 public class CrearEvento {
 
@@ -162,10 +152,12 @@ public class CrearEvento {
 			public void actionPerformed(ActionEvent e) {
 				if (listaEspacios.getSelectedIndex() != -1) {                       
 	                    System.out.println(listaEspacios.getSelectedValue()); 
+	                    System.out.println(listaEspacios.getSelectedValue().getIdSpace()); 
+
 	                    
 	                    Date date = null;
 						try {
-							date = (Date) new SimpleDateFormat("yyyy-MM-dd").parse("$frmtdtxtfldFecha.getText()-$mes.getText()-$dia.getText()");
+							date = (Date) new SimpleDateFormat("yyyy-MM-dd").parse(frmtdtxtfldFecha.getText()+"-"+mes.getText()+"-"+dia.getText());
 						} catch (ParseException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -173,6 +165,10 @@ public class CrearEvento {
 	                    
 	                    Event evento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(), date, Integer.parseInt(textFieldhora.getText()), Integer.parseInt(textFieldminuto.getText()));
 	                    geventos.crearEvento(evento);
+	                    
+	                    Spaces espacioselec = listaEspacios.getSelectedValue();
+	                    espacioselec.addEvento(evento);
+	                    gespacios.modiciarEspacio(espacioselec);
 	                    
 	                    frame.dispose();
 	                    

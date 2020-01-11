@@ -82,7 +82,7 @@ public class DB_DAO_S {
 		String nombre;
 
 		
-		Spaces espacio = null;
+		Spaces espacio = new Spaces();;
 	
 		try {
 			//System.out.println("   * Buscando usuario con email: " + email);
@@ -92,10 +92,11 @@ public class DB_DAO_S {
 			List<Spaces> espacios = (List<Spaces>) query.execute();
 			
 		
-			for (Spaces u  : espacios) {
-				if (u.getIdSpace() == (idSpace)) {
+			for (Spaces s  : espacios) {
+				if (s.getIdSpace() == (idSpace)) {
 				
-					espacio = new Spaces(idSpace, u.getName(),u.getAddress(),u.getCapacity(),u.getResources());
+					//espacio = new Spaces(idSpace, u.getName(),u.getAddress(),u.getCapacity(),u.getResources());
+					espacio = s;
 					
 				}
 

@@ -90,8 +90,8 @@ public class DB_DAO_E{
 		for (Event u  : eventos) {
 		if (u.getIdEvent() == (idEvent)) {
 
-		evento = new Event(idEvent, u.getName(),u.getTipology(),u.getPrice(),u.getResources(), u.getDateEvent(), u.getHour(), u.getMinutes());
-
+//		evento = new Event(idEvent, u.getName(),u.getTipology(),u.getPrice(),u.getResources(), u.getDateEvent(), u.getHour(), u.getMinutes());
+		evento = u;
 		}
 
 		}
