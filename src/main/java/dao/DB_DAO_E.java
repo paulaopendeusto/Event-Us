@@ -21,8 +21,8 @@ public class DB_DAO_E{
 	Transaction tx = pm.currentTransaction();
 	
 	private static ArrayList<Event> eventos;
-	
-	
+	private Event evento;
+	private List<Event> listEventos;
 	private static DB_DAO_E instance;
 		
 	public static DB_DAO_E getInstance() {
@@ -79,7 +79,7 @@ public class DB_DAO_E{
 		Transaction tx = pm.currentTransaction();
 		String nombre;
 
-		Event evento = null;
+		
 
 		try {
 		tx.begin();
@@ -90,9 +90,11 @@ public class DB_DAO_E{
 		if (u.getIdEvent() == (idEvent)) {
 
 		evento = u;
+		
 		}
 
 		}
+		
 		tx.commit();
 		} catch (Exception ex) {
 		System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
@@ -168,6 +170,7 @@ public class DB_DAO_E{
 			e.setTipology(evento.getTipology());
 			e.setIdEvent(evento.getIdEvent());
 			
+			
 			pm.makePersistent(e);
 			
 			System.out.println("Evento modificado!!");
@@ -201,7 +204,7 @@ public class DB_DAO_E{
 		Transaction tx = pm.currentTransaction();
 	
 
-		List<Event> listEventos = null;
+		
 	
 		try {
 			//System.out.println("   * Buscando usuario con email: " + email);

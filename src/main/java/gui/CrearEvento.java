@@ -170,7 +170,8 @@ public class CrearEvento {
 	                    
 	                    Event evento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(), date, Integer.parseInt(textFieldhora.getText()), Integer.parseInt(textFieldminuto.getText()));
 	                    geventos.crearEvento(evento, idSpace);
-	                   	                    
+	                    
+	                   	evento = null;                    
 	                    frame.setVisible(false);
 	                    
 	                 } 

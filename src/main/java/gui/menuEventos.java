@@ -83,6 +83,25 @@ public class menuEventos extends JFrame {
 		JButton btnModEvento = new JButton("Modificar Evento");
 		btnModEvento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				if (listaEventos.getSelectedIndex() != -1) {
+					
+					ModificarEvento windowModificarEvento=new ModificarEvento(listaEventos.getSelectedValue().getIdEvent());
+					setVisible(false);
+					dispose();
+					
+//					JOptionPane.showMessageDialog(frame,"Evento modificado correctamente.");
+//					menuEventos windowEventos=new menuEventos();
+//			    	windowEventos.setVisible(true);
+					
+				}else {
+					JOptionPane.showMessageDialog(frame,
+						    "Por favor, seleccione un evento para poder modificarlo.",
+						    "Ningún evento seleccionado",
+						    JOptionPane.ERROR_MESSAGE);
+				} 
+				
+				
 				//ModificarEvento windowModificarEvento=new ModificarEvento();
 //				setVisible(false);
 //				dispose();
