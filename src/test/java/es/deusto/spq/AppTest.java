@@ -8,9 +8,11 @@ import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
+import org.junit.Rule;
 import org.junit.Test;
 
 import data.Event;
@@ -18,7 +20,16 @@ import data.Spaces;
 import gestor.gestorEspacios;
 import gestor.gestorEventos;
 
+//import org.databene.contiperf.*;
+
+
 public class AppTest {
+	
+	
+	static Logger logger = Logger.getLogger(AppTest.class.getName());
+
+//	@Rule
+//	public ContiPerfRule rule = new ContiPerfRule();
 	
 	gestorEspacios objGestorEspacios = new gestorEspacios();
 	gestorEventos objGestorEventos= new gestorEventos();
@@ -47,6 +58,7 @@ public class AppTest {
 		objGestorEventos.crearEvento(e1,s1.getIdSpace());
 		objGestorEventos.crearEvento(e2,s1.getIdSpace());
 					
+		logger.info("setUp realizado: 2 eventos y 2 espacios creados");
 	    }
 	 
 	 
@@ -80,12 +92,15 @@ public class AppTest {
 	@Test
 	public void contadorId() 
 	{
+		logger.info("Empezando prueba contador ID");
 		java.util.List<Event> eventos = objGestorEventos.listaEventos();
 		int idUltimoEvento = eventos.get(eventos.size()-1).getIdEvent();
 		assertTrue(objGestorEventos.generarId() == idUltimoEvento+1);
+		logger.debug("Prueba contador ID terminada");
 		
 	}
 	
+	//@PerfTest(invocations = 1000)
 	@Test
 	public void bdtestCrear()
 	{
