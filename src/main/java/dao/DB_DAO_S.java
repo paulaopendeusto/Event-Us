@@ -134,7 +134,7 @@ public class DB_DAO_S {
 			List<Spaces> espacios = (List<Spaces>) query.execute();
 			
 			espaciosLista = new ArrayList<Spaces>(espacios); 
-			for (Spaces e: espaciosLista) {System.out.println("---------"+e.toString());}
+			//for (Spaces e: espaciosLista) {System.out.println("---------"+e.toString());}
 			
 			
 			tx.commit();
@@ -145,7 +145,7 @@ public class DB_DAO_S {
 				tx.rollback();
 			}
 			
-			for (Spaces e: espaciosLista) {System.out.println(e.toString()+"-------");}
+			//for (Spaces e: espaciosLista) {System.out.println(e.toString()+"-------");}
 
 			pm.close();
 		}
