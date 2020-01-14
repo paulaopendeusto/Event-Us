@@ -21,14 +21,21 @@ public class ModificarEspacio {
 	private JTextField textfieldResources;
 	private JSpinner spinner;
 	gestorEspacios objGestor = new gestorEspacios();
-
+	
+	private Spaces s;
 
 	public ModificarEspacio(Spaces s) {
-		initialize(s);
+		
+		
+		
+		this.s = s;
+		initialize();
+		//initialize(s);
 	}
 
 	
-	private void initialize(Spaces s) {
+	//private void initialize(Spaces s) {
+	private void initialize() {
 		frame = new JFrame();
 		frame.setVisible(true);
 		frame.setBounds(100, 100, 600, 450);
@@ -41,8 +48,14 @@ public class ModificarEspacio {
 				
 				if(textFieldName.getText()!=null) 
 				{
-					Spaces objEspacio = new Spaces(textFieldName.getText(),textfieldAdress.getText(),Integer.parseInt(spinner.getValue().toString()),textfieldResources.getText());
-					objGestor.modiciarEspacio(objEspacio);
+					//Spaces objEspacio = new Spaces(textFieldName.getText(),textfieldAdress.getText(),Integer.parseInt(spinner.getValue().toString()),textfieldResources.getText());
+					
+					s.setName(textFieldName.getText());
+					s.setAddress(textfieldAdress.getText());
+					s.setCapacity(Integer.parseInt(spinner.getValue().toString()));
+					s.setResources(textfieldResources.getText());
+					
+					objGestor.modiciarEspacio(s);
 					frame.setVisible(false);
 
 				}

@@ -78,10 +78,20 @@ public class menuEspacios extends JFrame {
 		btnModEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
+				
+				if (listaEspacios.getSelectedIndex() != -1) {
+					
+				
 				ModificarEspacio windowModEspacio = new  ModificarEspacio(listaEspacios.getSelectedValue());
 				setVisible(false);
 				dispose();
-			
+				}
+				else {
+					JOptionPane.showMessageDialog(frame,
+						    "Por favor, seleccione un espacio para poder modificarlo.",
+						    "Ningún espacio seleccionado",
+						    JOptionPane.ERROR_MESSAGE);
+				}
 			}
 		});	
 		contentPane.add(btnModEspacio);

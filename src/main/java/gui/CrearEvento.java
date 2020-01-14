@@ -16,12 +16,14 @@ import java.awt.event.ActionEvent;
 import javax.swing.DefaultListSelectionModel;
 
 import java.awt.event.ActionListener;
+import java.sql.Timestamp;
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 import javax.swing.JFormattedTextField;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
 
@@ -39,7 +41,7 @@ public class CrearEvento {
 	private JFormattedTextField frmtdtxtfldFecha;
 	private JTextField mes;
 	private JTextField dia;
-
+	private Date date;
 	public CrearEvento(){
 		initialize();
 	}
@@ -160,14 +162,29 @@ public class CrearEvento {
 	                    System.out.println(idSpace); 
 
 	                    
-	                    Date date = null;
+	                    String strdate = dia.getText()+"-"+mes.getText()+"-"+frmtdtxtfldFecha.getText();
+	                    
+	                    SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+	                    
+	                    
 						try {
-							date = (Date) new SimpleDateFormat("yyyy-MM-dd").parse(frmtdtxtfldFecha.getText()+"-"+mes.getText()+"-"+dia.getText());
+							date = format.parse(strdate);
 						} catch (ParseException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
 	                    
+						//Timestamp ts=new Timestamp(date.getTime());  
+	                    
+//	                    Date date = null;
+//						try {
+//							date = (Date) new SimpleDateFormat("yyyy-MM-dd").parse(frmtdtxtfldFecha.getText()+"-"+mes.getText()+"-"+dia.getText());
+//						} catch (ParseException e1) {
+//							// TODO Auto-generated catch block
+//							e1.printStackTrace();
+//						}
+	                    
+						
 	                    Event evento = new Event(textFieldName.getText(), textFieldtipo.getText(), Float.parseFloat(spinner.getValue().toString()), textFieldresources.getText(), date, Integer.parseInt(textFieldhora.getText()), Integer.parseInt(textFieldminuto.getText()));
 	                    geventos.crearEvento(evento, idSpace);
 	                    
@@ -175,6 +192,12 @@ public class CrearEvento {
 	                    frame.setVisible(false);
 	                    
 	                 } 
+				else {
+					JOptionPane.showMessageDialog(frame,
+						    "Por favor, seleccione el espacio al que se asignará el evento.",
+						    "Ningún espacio seleccionado",
+						    JOptionPane.ERROR_MESSAGE);
+				}
 			}
 		});
 		btnAnadirEspacio.setBounds(406, 365, 149, 23);
