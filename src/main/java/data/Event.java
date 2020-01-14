@@ -116,9 +116,15 @@ public class Event {
 
 	@Override
 	public String toString() {
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		if (DateEvent != null) {
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
 		return  idEvent + ": " + Name + ". Tipo: " + Tipology + ". Precio: " + Price
 				+ "€. Fecha: " + format.format(DateEvent) + ", " + Hour + ":" + Minutes;
+	
+		}else
+			return  idEvent + ": " + Name + ". Tipo: " + Tipology + ". Precio: " + Price
+					+ "€, " + Hour + ":" + Minutes;
 	}
 	
 	

@@ -15,7 +15,6 @@ import data.*;
 
 /**
  * 
- * @author Iñigo
  * @version 1.0
  * 
  * Clase que interactua con BBDD utilizando DAO, específica para la entidad evento. 
@@ -125,7 +124,6 @@ public class DB_DAO_E{
 		
 		
 		}
-		System.out.println();
 		}
 		
 		tx.commit();
