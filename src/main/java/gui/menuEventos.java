@@ -60,7 +60,7 @@ public class menuEventos extends JFrame {
 		listaEventos.setSelectionMode(DefaultListSelectionModel.SINGLE_SELECTION);
 		
 		JScrollPane scrollLista = new JScrollPane();
-		scrollLista.setBounds(46, 104, 484, 191);
+		scrollLista.setBounds(50, 100, 505, 180);
 		scrollLista.setViewportView(listaEventos);
 		contentPane.add(scrollLista);
 

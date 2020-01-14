@@ -78,9 +78,9 @@ public class menuEspacios extends JFrame {
 		btnModEspacio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-//				ModificarEspacio windowModEspacio = new  ModificarEspacio();
-//				setVisible(false);
-//				dispose();
+				ModificarEspacio windowModEspacio = new  ModificarEspacio(listaEspacios.getSelectedValue());
+				setVisible(false);
+				dispose();
 			
 			}
 		});	
