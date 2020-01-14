@@ -3,8 +3,6 @@ package data;
 import java.util.ArrayList;
 
 import javax.jdo.annotations.Element;
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -12,7 +10,6 @@ import javax.jdo.annotations.PrimaryKey;
 
 /**
  * 
- * @author Iñigo
  * @version 1.0
  *
  * Clase entidad. Da lugar al objetivo principal de la aplicación, crear, modificar, asignar y eliminar espacios.
@@ -39,7 +36,12 @@ public class Spaces
 	@Element(column="idSpace")
 	private ArrayList<Event> listaEventos;
 	
-	
+	/**
+	 * 
+	 * @param atributos del espacio
+	 * 
+	 * Constructor de espacios que además inicializa la lista de eventos del espacio.
+	 */
 	public Spaces(String name, String address, int capacity, String resources)
 	{
 		this.name=name;
@@ -49,6 +51,9 @@ public class Spaces
 		this.listaEventos = new ArrayList<Event>();
 
 	}
+	/** 
+	 * Constructor de espacio necesario para que se inicialice la lista de eventos que van a ser asignados a este espacio.
+	 */
 	public Spaces()
 	{
 		
@@ -56,6 +61,13 @@ public class Spaces
 
 	}
 	
+	
+	/**
+	 * 
+	 * @param objeto de tipo Spaces
+	 * 
+	 * Constructor de espacio.
+	 */
 	public Spaces(Spaces s)
 	{
 		this.idSpace= s.getIdSpace();
@@ -121,10 +133,11 @@ public class Spaces
 		this.listaEventos = listaEventos;
 	}
 	
+	
 	@Override
 	public String toString() {
-		return "id:" + idSpace + ", " + name + ", localización:" + address + ", capacidad:" + capacity
-				+ ", recursos:" + resources + "no tiene evento: ";
+		return idSpace + ": " + name + ", localización: " + address + ", capacidad: " + capacity
+				+ ", recursos: " + resources;
 	}
 
 	

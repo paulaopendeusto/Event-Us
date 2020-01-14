@@ -1,17 +1,15 @@
 package data;
 
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 
 /**
  * 
- * @author Iñigo
  * @version 1.0
  * 
  * Clase entidad. Da lugar al objetivo principal de la aplicación, crear, modificar, asignar y eliminar eventos. 
@@ -35,7 +33,12 @@ public class Event {
 	private int Hour;
 	private int Minutes;
 	
-
+	/**
+	 * 
+	 * @param atributos del evento
+	 * 
+	 * Constructor de evento.
+	 */
 	public Event(String name, String tipology, float price, String resources, Date date, int hour, int minutes)
 	{
 		this.Name = name;
@@ -113,8 +116,9 @@ public class Event {
 
 	@Override
 	public String toString() {
-		return  idEvent + ": " + Name + ". Tipo de evento: " + Tipology + ". Precio:" + Price
-				+ ". Fecha:" + DateEvent + ", hora:" + Hour + ":" + Minutes;
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		return  idEvent + ": " + Name + ". Tipo: " + Tipology + ". Precio: " + Price
+				+ "€. Fecha: " + format.format(DateEvent) + ", " + Hour + ":" + Minutes;
 	}
 	
 	
