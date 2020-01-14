@@ -10,6 +10,20 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 
+/**
+ * 
+ * @author Iñigo
+ * @version 1.0
+ *
+ * Clase entidad. Da lugar al objetivo principal de la aplicación, crear, modificar, asignar y eliminar espacios.
+ * La clase evento se guarda en BBDD usando DAO. 
+ * La relación en BBDD es de 1 -> N, donde el lado 1 (Spaces) y lado N (Event)
+ * 
+ * 
+ * Dispone de los parametros necesarios para el funcionamiento de la aplicación, junto con sus getters y settes.
+ * @param listaEventos Se trata de una lista de eventos (entidad evento), necesaria para la relación en BBDD..
+ * 
+ */
 @PersistenceCapable(detachable = "true")
 public class Spaces 
 {

@@ -13,6 +13,15 @@ import java.util.List;
 
 import data.*;
 
+/**
+ * 
+ * @author Iñigo
+ * @version 1.0
+ * 
+ * Clase que interactua con BBDD utilizando DAO, específica para la entidad evento. 
+ * 
+ *
+ */
 public class DB_DAO_E{
 	
 	PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -25,6 +34,14 @@ public class DB_DAO_E{
 	private List<Event> listEventos;
 	private static DB_DAO_E instance;
 		
+	
+	/**
+	 * 
+	 * @return devuelve instancia de la clase
+	 * 
+	 * Clase estática que devuelve instancia de la propia clase. Empleada para poder acceder a los metodos 
+	 * de la clase sin tener que declarar un objeto de tipo DB_DAO_E. 
+	 */
 	public static DB_DAO_E getInstance() {
 		if (instance == null) {
 			instance = new DB_DAO_E();
@@ -35,7 +52,14 @@ public class DB_DAO_E{
 		return instance;
 	}
 		
-	//Método para registrar el usuario
+	/**
+	 * 
+	 * @param objEvento recibe una entidad evento
+	 * @return devuelve booleano como comprobación de funcionamiento
+	 * 
+	 * registrarE, añade una linea a la tabla de evento en BBDD. Para ello recibe un objetivo de tipo evento, 
+	 * y lo hace persistente. 
+	 */
 	public boolean registrarE(Event objEvento){	
 						
 		try {
@@ -72,7 +96,14 @@ public class DB_DAO_E{
 			}
 		}
 	}
-
+	/**
+	 * 
+	 * @param idEvent Recibe el id de un evento
+	 * @return	devuelve un evento
+	 * 
+	 * getE, busca en BBDD un evento especifíco de acuerdo al id que el usuario le pase por parametro. 
+	 * Para ello saca todos los eventos de base de datos y compara sus ids hasta que coincidan. 
+	 */
 	public Event getE(int idEvent) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -88,11 +119,13 @@ public class DB_DAO_E{
 		List<Event> eventos = (List<Event>) query.execute();
 		for (Event u  : eventos) {
 		if (u.getIdEvent() == (idEvent)) {
-
+			
 		evento = u;
+		return evento;
+		
 		
 		}
-
+		System.out.println();
 		}
 		
 		tx.commit();
@@ -106,10 +139,17 @@ public class DB_DAO_E{
 
 		pm.close();
 		}
-
+		
 		return evento;
 		}
-	
+	/**
+	 * 
+	 * @param idEvento id de evento
+	 * @return booleano de comprobación
+	 * 
+	 * elimina un evento de BBDD, comparando el id recibido con todos los existentes en BBDD. 
+	 * Si alguno coincide se elimina y se devuelve true, en caso contrario se devuelve un false
+	 */
 	public boolean eliminarE(int idEvento){	
 		
 		try {
@@ -147,7 +187,14 @@ public class DB_DAO_E{
 		return true;
 	}
 	
-
+	/**
+	 * 
+	 * @param evento entidad evento para sustituir en BBDD
+	 * @return booleano de comprobación
+	 * 
+	 * Para modificar un evento en BBDD, modificarE recibe un objeto evento pero con el id del evento a ser modificado.
+	 * 
+	 */
 	public boolean modificarE(Event evento){	
 		
 		try {
@@ -198,6 +245,12 @@ public class DB_DAO_E{
 		return true;
 	}
 	
+	/**
+	 * 
+	 * @return lista de eventos completa de BBDD
+	 * 
+	 * Saca de BBDD la lista completa de los eventos registrados.
+	 */
 	public List<Event> getEventos() {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();

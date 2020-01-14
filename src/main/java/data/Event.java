@@ -8,6 +8,20 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+
+/**
+ * 
+ * @author Iñigo
+ * @version 1.0
+ * 
+ * Clase entidad. Da lugar al objetivo principal de la aplicación, crear, modificar, asignar y eliminar eventos. 
+ * La clase evento se guarda en BBDD usando DAO. 
+ * La relación en BBDD es de 1 -> N, donde el lado 1 (Spaces) y lado N (Event)
+ * 
+ * Dispone de los parametros necesarios para el funcionamiento de la aplicación, junto con sus getters y settes. 
+ * No dispone de ningún metodo adicional. 
+ *
+ */
 @PersistenceCapable(detachable="true")
 public class Event {
 

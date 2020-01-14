@@ -15,6 +15,7 @@
     <server.hostname>127.0.0.1</server.hostname>
     <server.port>8080</server.port>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<doxygen.config.file>${basedir}/src/main/java/resources/Doxyfile</doxygen.config.file>
   </properties>
 
   <dependencies>
@@ -98,6 +99,15 @@
         </resources>
 
         <plugins>
+        
+       		 <plugin>
+				<groupId>com.soebes.maven.plugins</groupId>
+				<artifactId>doxygen-maven-plugin</artifactId>
+				<version>1.1.0</version>
+				<configuration>
+					<configurationFile>${doxygen.config.file}</configurationFile>
+				</configuration>
+			</plugin>
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>

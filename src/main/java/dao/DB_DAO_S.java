@@ -12,6 +12,16 @@ import java.util.List;
 
 import data.*;
 
+
+/**
+ * 
+ * @author Iñigo
+ * @version 1.0
+ * 
+ * Clase que interactua con BBDD utilizando DAO, específica para la entidad espacio. 
+ * 
+ *
+ */
 public class DB_DAO_S {
 	
 	PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -28,6 +38,13 @@ public class DB_DAO_S {
 		
 	
 	//public DB_DAO_S 
+	/**
+	 * 
+	 * @return devuelve instancia de la clase
+	 * 
+	 * Clase estática que devuelve instancia de la propia clase. Empleada para poder acceder a los metodos 
+	 * de la clase sin tener que declarar un objeto de tipo DB_DAO_S 
+	 */
 	public static DB_DAO_S getInstance() {
 		if (instance == null) {
 			instance = new DB_DAO_S();
@@ -38,7 +55,14 @@ public class DB_DAO_S {
 		return instance;
 	}
 		
-	//Metodo para registrar el usuario
+	/**
+	 * 
+	 * @param espacio recibe una entidad espacio
+	 * @return devuelve booleano como comprobación de funcionamiento
+	 * 
+	 * registrarS, añade una linea a la tabla de espacio en BBDD. Para ello recibe un objetivo de tipo evento, 
+	 * y lo hace persistente. 
+	 */
 	public boolean registrarS(Spaces espacio){	
 						
 		try {
@@ -76,7 +100,14 @@ public class DB_DAO_S {
 		
 		return true;
 	}
-
+	/**
+	 * 
+	 * @param idSpace Recibe el id de un espacio
+	 * @return	devuelve un espacio
+	 * 
+	 * getS, busca en BBDD un espacio especifíco de acuerdo al id que el usuario le pase por parametro. 
+	 * Para ello saca todos los espacios de base de datos y compara sus ids hasta que coincidan. 
+	 */
 	public Spaces getS(int idSpace) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -117,7 +148,12 @@ public class DB_DAO_S {
 		System.out.println("Espacio que paso: "+espacio.toString());
 		return espacio;
 	}
-	
+	/**
+	 * 
+	 * @return lista de espacios completa de BBDD
+	 * 
+	 * Saca de BBDD la lista completa de los espacios registrados.
+	 */
 	public List<Spaces> getEspacios() {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -152,6 +188,15 @@ public class DB_DAO_S {
 
 		return espaciosLista;
 	}
+	
+	/**
+	 * 
+	 * @param idEspacio id de espacio
+	 * @return booleano de comprobación
+	 * 
+	 * elimina un espacio de BBDD, comparando el id recibido con todos los existentes en BBDD. 
+	 * Si alguno coincide se elimina y se devuelve true, en caso contrario se devuelve un false
+	 */
 	public boolean eliminarS(int idEspacio){	
 		
 		try {
@@ -188,7 +233,15 @@ public class DB_DAO_S {
 		
 		return true;
 	}
-
+	
+	/**
+	 * 
+	 * @param espacio entidad espacio para sustituir en BBDD
+	 * @return booleano de comprobación
+	 * 
+	 * Para modificar un espacio en BBDD, modificarE recibe un objeto espacio pero con el id del evento a ser modificado.
+	 * 
+	 */
 	public boolean modificarS(Spaces espacio){	
 		
 		try {
