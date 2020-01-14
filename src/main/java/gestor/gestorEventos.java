@@ -1,22 +1,16 @@
 	package gestor;
 	
-	import java.text.ParseException;
-	import java.text.SimpleDateFormat;
+
 	import java.util.Date;
 	import java.util.List;
 	
-	import javax.swing.DefaultListModel;
-	import javax.swing.ListModel;
-	
 	import dao.DB_DAO_E;
-	import dao.DB_DAO_S;
 	import data.Event;
-	import data.Spaces;
+
 	
 	
 	/**
 	 * 
-	 * @author Iñigo
 	 * @version 1.0
 	 * 
 	 * Clase intermediadora entre interfaz gráfica y BBDD.
@@ -50,13 +44,8 @@
 		 */
 		public void crearEvento(Event evento, int idEspacio)
 		{
-		
-			
-		
-			
-			
+				
 			evento.setIdEvent(this.generarId());
-			
 			
 			int idEvento = evento.getIdEvent();
 			
@@ -64,8 +53,6 @@
 			
 			
 			gestorEspacios objEspacios = new gestorEspacios();
-			
-			
 			
 			objEspacios.asignarEvento(idEvento, idEspacio);
 			
@@ -103,8 +90,7 @@
 			eventos = objDao.getEventos();
 			
 			return eventos;
-			// objDao.getInstance()
-			// sacar mediante DB_DAO_E lista de todos los eventos ==> metodo en dao todavia no esta
+			
 		}
 		
 		/**

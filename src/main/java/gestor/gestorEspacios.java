@@ -8,7 +8,6 @@ import data.Spaces;
 
 /**
  * 
- * @author Iñigo
  * @version 1.0
  * 
  * Clase intermediadora entre interfaz gráfica y BBDD.
@@ -18,8 +17,15 @@ import data.Spaces;
  */
 public class gestorEspacios
 {
-List<Spaces> espacios;
 
+	private List<Spaces> espacios;
+	private DB_DAO_S objDao;
+	private Spaces space;
+
+	public gestorEspacios() 
+	{
+		objDao = new DB_DAO_S();
+	}
 		/**
 		 * 
 		 * @param objEspacio objeto tipo espacio
@@ -32,7 +38,7 @@ List<Spaces> espacios;
 		
 			System.out.println("crear espacio");
 			objEspacio.setIdSpace(this.generarId());
-			DB_DAO_S.getInstance().registrarS(objEspacio);
+			objDao.registrarS(objEspacio);
 		
 		}
 		
@@ -46,8 +52,7 @@ List<Spaces> espacios;
 		 */
 		public void eliminarEspacio(int idEspacio)
 		{
-			System.out.println("Eliminar espacio");
-			DB_DAO_S.getInstance().eliminarS(idEspacio);
+			objDao.eliminarS(idEspacio);
 		}
 		/**
 		 * 
@@ -58,8 +63,7 @@ List<Spaces> espacios;
 		 */
 		public void modiciarEspacio(Spaces espacio)
 		{
-			System.out.println("Modificar espacio");
-			DB_DAO_S.getInstance().modificarS(espacio);
+			objDao.modificarS(espacio);
 		}
 		/**
 		 * 
@@ -69,10 +73,8 @@ List<Spaces> espacios;
 		 */
 		public List<Spaces> listaEspacios()
 		{
-			espacios = DB_DAO_S.getInstance().getEspacios();
-			
-			System.out.println("listado espacios");
-			
+			espacios = objDao.getEspacios();
+						
 			return espacios;
 		}
 		/**
@@ -85,9 +87,9 @@ List<Spaces> espacios;
 		 */
 		public Spaces devolverEspacio(int idEspacio)
 		{
-			Spaces espacio = DB_DAO_S.getInstance().getS(idEspacio);
+			space = objDao.getS(idEspacio);
 			
-			return espacio;
+			return space;
 		
 		}
 		/**
@@ -113,21 +115,10 @@ List<Spaces> espacios;
 			Spaces espacio = this.devolverEspacio(idEspacio);
 			
 			espacio.addEvento(objgestor.getE(idEvento));
-			
-			
-			// System.out.println(evento.getName());
-			// System.out.println(espacio.getName());
-			
-			
-			
+		
 			DB_DAO_S.getInstance().modificarS(espacio);
 			
 			
-			
-			//for (Spaces s :this.listaEspacios())
-			//{
-			//System.out.println(s.getIdSpace());
-			//}
 		}
 		/**
 		 * 

@@ -43,10 +43,10 @@ public class menuEventos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblGestionarEspacios = DefaultComponentFactory.getInstance().createTitle("Gestionar Eventos");
-		lblGestionarEspacios.setFont(new Font("Tahoma", Font.BOLD, 30));
-		lblGestionarEspacios.setBounds(136, 41, 333, 35);
-		contentPane.add(lblGestionarEspacios);
+		JLabel lblGestionarEventos = DefaultComponentFactory.getInstance().createTitle("Gestionar Eventos");
+		lblGestionarEventos.setFont(new Font("Tahoma", Font.BOLD, 30));
+		lblGestionarEventos.setBounds(136, 41, 333, 35);
+		contentPane.add(lblGestionarEventos);
 			
 		gestorEventos geventos = new gestorEventos();
 		java.util.List<Event> eventos = geventos.listaEventos();
