@@ -8,3 +8,23 @@ Mediante MySql se persisten todos los datos referentes a **eventos** y **espacio
 Las **funcionalidades** principales de este programa son las siguientes:
 1. Dar de alta, modificar, visualizar y eliminar espacios.
 2. Dar de alta, modificar, visualizar y eliminar eventos.
+
+Los requerimientos para poder usar la aplicación serán los siguientes:
+1. Crear una base de datos en el servidor local llamada **eventus**
+2. en la ruta "src/main/java/resources/datanucleus.properties" modificar el fichero:
+  2.1 Linea 6 ConnectionUserName = "Nombre de usuario del localhost"
+  2.2 Linea 7 ConnectionPassword = "Contraseña de localhost"
+3. Disponer de maven instalado en el equipo, así como configurada en las variables de entorno.
+
+Como **ejecutar** aplicación:
+1. abrir el interprete de comandos en la raiz del proyecto (donde esta ubicado el fichero POM)
+2. ejecutar la siguiente linea de comando que compilará el codigo fuente (mvn compile)
+3. ejecutar la siguiente linea de comando para ejecutar el archivo compilado (mvn exec:java -Pclient)
+
+Como ejecutar **tests**
+1. abrir el interprete de comandos en la raiz del proyecto (donde esta ubicado el fichero POM)
+2. ejectuar la siguiente linea de comando (mvn test)
+
+Como generar documentación con **doxygen**
+1. abrir el interprete de comandos en la raiz del proyecto (donde esta ubicado el fichero POM)
+2. ejecutar la siguiente linea de comando(mvn doxygen:report)
